@@ -1,0 +1,190 @@
+<?php 
+error_reporting(1);
+$base = dirname(__FILE__);
+if (@file_exists(dirname(dirname(dirname($base)))."/wp-includes/wp-db.php"))
+{
+$db_path = dirname(dirname(dirname($base)))."/wp-includes/wp-db.php";
+}
+if (@file_exists(dirname(dirname(dirname($base)))."/wp-config.php"))
+{
+$config_path = dirname(dirname(dirname($base)))."/wp-config.php";
+}
+require_once( $db_path );
+require_once( $config_path );
+if (!$wpdb) { $wpdb = new wpdb( DB_USER, DB_PASSWORD, DB_NAME, DB_HOST); } else { global $wpdb; }
+if($_POST['service_price'] != ''){
+	
+
+
+	//*********Time schedule***********
+	$service_id=$_POST['content_new'];
+	$sqlServ = "SELECT * FROM wp_ap_services  where id=$service_id";
+    $resultServ = $wpdb->get_results($sqlServ);
+	  $slot_step=$resultServ[0]->slot_step;
+	  $time_slot=$slot_step*60;
+	  $output_new='';
+	  $start_time=$_POST['start_time'];
+	$end_time=$_POST['end_time'];
+	 $open_time_new = strtotime($start_time);
+     $close_new_time = strtotime($end_time);
+	   for( $i=$open_time_new; $i<$close_new_time; $i+=$time_slot) {
+		    $output_new .=date("H:i",$i).',';
+	   }
+	$str = rtrim($output_new, ',');
+	$parms['time_schedule']=$str;
+	$ap_location = $wpdb->prefix . 'ap_location';
+	$location_id = $_POST['location_id'];
+	$sqllocation = "SELECT * FROM $ap_location  where id=$location_id";
+	$resultlocation = $wpdb->get_results($sqllocation);
+	$locationPrice=$resultlocation[0]->location_price;
+	//*********End Time schedule***********
+
+
+	$booking_date=$_POST['booking_date'];
+	$start_time=$_POST['start_time'];
+	$end_time=$_POST['end_time'];
+	$number_service=$_POST['number_service'];
+	$service_price=$_POST['service_price']*$number_service;
+	$current_booking_date=$_POST['current_booking_date'];
+	//$number_service=$_POST['number_service'];
+	$location=$_POST['location_id'];
+	$content_new=$_POST['content_new'];
+	$my_ip=$_POST['my_ip'];
+	$my_order=$_POST['my_order'];
+	$engineer_id=$_POST['engineer_id'];
+	
+	
+	$time_schedule=$str;//$_POST['time_schedule'];
+	
+	$resultss = $wpdb->get_results("SELECT * FROM wp_ap_slot where my_ip='$ip' order by id asc");
+	foreach ($resul as $prin) {
+		$old_ordeno=$prin->order_no;
+		if($my_order !=$old_ordeno){
+			$wpdb->get_results("DELETE FROM wp_ap_slot where order_no='$old_ordeno'");
+		}
+	}
+	
+	
+	$service_result = $wpdb->get_results("SELECT * FROM wp_ap_services where id='$content_new' ");
+	
+	$service_price=$service_result[0]->price*$number_service;
+	
+	
+	$inserted=$wpdb->query("INSERT INTO `wp_ap_slot`(`booking_date`, `start_time`, `end_time`, `service_price`, `current_booking_date`, `service`, `service_no`,`my_ip`,`location`,`order_no`) VALUES ('$booking_date','$start_time','$end_time','$service_price','$current_booking_date','$content_new','$number_service','$my_ip','$location','$my_order')");
+	$inserted=$wpdb->query("INSERT INTO `wp_ap_order_list`(`booking_date`, `start_time`, `end_time`, `service_price`, `current_booking_date`, `service`, `service_no`,`my_ip`,`location`,`order_no`,`time_schedule`,`engineer_id`) VALUES ('$booking_date','$start_time','$end_time','$service_price','$current_booking_date','$content_new','$number_service','$my_ip','$location','$my_order','$time_schedule','$engineer_id')");
+	if($inserted)
+	{
+		//echo "Time slot added";
+	}
+	//exit();
+	
+}
+
+if($_POST['my_c_ip'])
+{
+	$my_c_ip=$_POST['my_c_ip'];
+	$wpdb->get_results("DELETE FROM wp_ap_slot where my_ip='$my_c_ip' AND order_no=''");
+	$wpdb->get_results("DELETE FROM wp_ap_order_list where my_ip='$my_c_ip' AND order_no=''");
+}
+
+if($_POST['my_ips'])
+{
+	$my_ip=$_POST['my_ips'];
+$wpdb->get_results("DELETE FROM wp_ap_slot where my_ip='$my_ip'");
+$wpdb->get_results("DELETE FROM wp_ap_order_list where my_ip='$my_ip' AND order_no=''");
+}
+
+if($_POST['engineer_list_id'])
+{
+	$engineer_list_id=$_POST['engineer_list_id'];
+	$engineer_assign_id=$_POST['engineer_assign_id'];
+	
+	$order_no=$_POST['order_no'];
+	$date=$_POST['date'];
+	$eid=$_POST['eid'];
+	$start_time=$_POST['start_time'];
+	$end_time=$_POST['end_time'];  // engineer_id
+	
+	$order_chk = $wpdb->get_results("SELECT * FROM wp_ap_order_list where booking_date='$date' AND start_time='$start_time' AND  engineer_id ='$engineer_assign_id' AND order_no ='$order_no'");
+	//foreach ($order_chk as $print) {
+	//	print_r(count($print->id));
+	//}
+	//booking_date='$date' AND start_time='$start_time' AND  engineer_id !='$engineer_assign_id'
+	//print_r(count($order_chk));
+	if(count($order_chk) == 0)
+	{
+		$wpdb->get_results("UPDATE `wp_ap_order_list` SET `engineer_id`='$engineer_assign_id' WHERE id='$engineer_list_id'");
+		echo"Assign Engg. successfully";
+		
+	}else{
+		echo"Assign Engg. already another work this time";
+	}
+	
+	exit();
+}
+
+if($_POST['booking_ids'])
+{
+	$booking_ids=$_POST['booking_ids'];
+	$payment_status=$_POST['payment_status'];
+	$paydate=date('Y-m-d');
+	$booking_result = $wpdb->get_results("SELECT * FROM wp_ap_payment where booking_id='$booking_ids'");
+	if($booking_result)
+	{
+		$wpdb->get_results("UPDATE `wp_ap_payment` SET `payment_status`='$payment_status',txn_id='Admin' WHERE booking_id='$booking_ids'");
+		echo"Payment Status change successfully ";
+	}else{
+		$wpdb->get_results("INSERT INTO `wp_ap_payment`( `booking_id`, `payment_status`,`txn_id`, `create_at`) VALUES ('$booking_ids','$payment_status','Admin','$paydate')");
+	
+	echo"Payment Status change successfully ";
+	exit();
+	}
+}
+
+if($_POST['del_id'])
+{
+	$del_id=$_POST['del_id'];
+	$wpdb->get_results("DELETE FROM wp_ap_slot where id='$del_id'");
+	$wpdb->get_results("DELETE FROM wp_ap_order_list where id='$del_id' AND order_no=''");
+
+}
+$ip=$_SERVER['SERVER_ADDR'];
+$result = $wpdb->get_results("SELECT * FROM wp_ap_slot where my_ip='$ip' order by id asc");
+if($wpdb->num_rows){
+?>
+<div class="nit-hours arrays">
+	<table class="table">
+		<thead>
+			<th>Location name</th>
+			<th>Service name</th>
+			<th>Service number</th>
+			<th>Time</th>
+			<th>Date</th>
+			<th>Action</th>
+		</thead>
+		<tbody>
+		<?php 
+			
+			foreach ($result as $print) {
+				$service=$print->service;
+				$location=$print->location;
+				$results = $wpdb->get_results("SELECT * FROM wp_ap_services where id='$service'");
+				$resultsl = $wpdb->get_results("SELECT * FROM wp_ap_location where id='$location'");
+					
+		
+		?>
+		
+		<tr>
+			<td><?php foreach ($resultsl as $pri) { echo $pri->name; } ?></td>
+			<td><?php foreach ($results as $prints) { echo $prints->name; } ?></td>
+			<td><?php echo $print->service_no;?></td>
+			<td><?php echo date("h:i A", strtotime($print->start_time));?> - <?php echo date("h:i A", strtotime($print->end_time));?></td>
+			<td><?php echo date("d-m-Y", strtotime($print->booking_date));?></td>
+			<td><button type="button" onclick="return delslot('<?php echo $print->id;?>')" class="btn btn-danger">x</button></td>
+		</tr>
+			<?php } ?>
+		</tbody>
+	</table>
+ </div>
+<?php } ?>
+ 

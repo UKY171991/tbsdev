@@ -1,0 +1,16 @@
+﻿Step 1
+1. Install wordpress.
+2. upload  appointment-system Plugin in plugin.
+3. Create page home  and write shortcode on home page   [new_appointment] 
+4. Create page view-detail  and write shortcode   [new_appointment_payment] 
+5. create another page success  and write shortcode   [appointment_payment_sucess]
+
+
+Step 2
+ 
+1. Click on Appointment System Menu.
+2. Click on Location menu  add location. 
+3. Click on service menu add services.
+4. Click on connection menu create connection. 
+5. Click on engineer menu add engineers.
+6. Click on add new create new connection by admin.

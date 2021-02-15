@@ -1,0 +1,410 @@
+/*
+* Appointment System Admin CSS
+*/
+#ap-tab-header {
+   text-align: center;
+   margin-top: 35px;
+   padding: 10px;
+   background: #fff;
+   text-decoration: none !important;
+}   
+#ap-tab-header li {
+   display: inline-block;
+   font-size: 20px;
+   margin-right: 20px;
+   margin-left: 20px;
+   text-align: center;
+   text-decoration: none !important;
+}
+#ap-tab-header li a {
+   text-decoration: none;
+}
+#ap-tab-header li a i {
+   margin-bottom: 4px;
+   display: block;
+   font-size: 3em;
+   text-decoration: none !important;
+}
+table.table th, table.table td {
+    border: 1px solid #f1f5f9;
+    text-align: left;
+    padding-left: 7px;
+    width: auto !important;
+}
+.fa-map,.fa-thumb-tack,.fa-plug,#ap-tab-header li a {color: #761d00 ;}
+.fa-map:hover,.fa-thumb-tack:hover,.fa-plug:hover,.fa-user-secret:hover {color: #d1bc9c ;}
+.active_now {color: #d1bc9c !important;}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+select { 
+    max-width: 100% !important;
+}
+.card {
+    min-width:98% !important;
+}
+
+.gj-unselectable {
+    margin-bottom: 13px;
+}
+.hasDatepicker {
+   margin-bottom: 13px !important;
+}
+button#newsubmit {
+    margin-right: 7px;
+}
+.bg-slot{
+    background: green !important;
+    color: #fff!important;
+	  }
+	  
+	  
+    .booked_slot{
+	background: yellow !important;
+    color: #000 !important;
+}
+@media (min-width: 1200px){
+.container {
+    max-width: 1000px !important;
+}
+}
+
+/* front css */
+
+@font-face {
+  src: url(../fonts/album-avantquelombre.ttf);
+  font-family: 'avant quelombre'; }
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Rubik', sans-serif;
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none !important; }
+
+.tblk {
+  color: black; }
+
+.form-control {
+  border-radius: 0;
+  border-color: #a7a7a7; }
+
+.nit-nav-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  .nit-nav-box .nit-nav-left {
+    display: flex;
+    width: 80%; }
+  .nit-nav-box .nit-menu {
+    display: flex; }
+    .nit-nav-box .nit-menu .nit-nav-social {
+      display: flex;
+      align-items: center;
+      padding-right: 10px; }
+      .nit-nav-box .nit-menu .nit-nav-social a {
+        color: black;
+        padding: 8px;
+        font-size: 18px; }
+    .nit-nav-box .nit-menu .nit-nav-others {
+      display: flex;
+      align-items: center;
+      border-left: 2px solid black; }
+      .nit-nav-box .nit-menu .nit-nav-others a {
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 15px;
+        width: 170px; }
+        .nit-nav-box .nit-menu .nit-nav-others a .fa-clock-o, .nit-nav-box .nit-menu .nit-nav-others a .fa-phone {
+          color: #ff9c21;
+          font-size: 18px;
+          padding-right: 10px; }
+        .nit-nav-box .nit-menu .nit-nav-others a span {
+          flex-grow: 1; }
+        .nit-nav-box .nit-menu .nit-nav-others a:nth-child(2) {
+          background-color: #991010; }
+
+header .navbar {
+  padding: 0; }
+  header .navbar a.menu-btn {
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    border: 2px solid black;
+    padding: 1rem 0.5rem;
+    border-top: 0;
+    border-bottom: 0; }
+    header .navbar a.menu-btn i {
+      color: #ff9c21;
+      padding-right: .5rem;
+      margin-top: -2px; }
+
+.nit-option-date {
+  padding: 60px 0; }
+  .nit-option-date .nit-opt-box .form-group {
+    display: flex;
+    align-items: baseline; }
+    .nit-option-date .nit-opt-box .form-group label {
+      width: 100%;
+      margin-bottom: 0px;
+      font-size: 24px;
+      font-weight: 500;
+      color: #443127; }
+    .nit-option-date .nit-opt-box .form-group select {
+      background-color: #ffeaa7; }
+  .nit-option-date .nit-pinfo {
+    margin-top: 55px; }
+    .nit-option-date .nit-pinfo h3 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #443127; }
+    .nit-option-date .nit-pinfo h5 {
+      font-size: 20px;
+      font-weight: 400;
+      color: #443127; }
+    .nit-option-date .nit-pinfo .row {
+      margin-top: 35px; }
+    .nit-option-date .nit-pinfo label {
+      font-size: 18px;
+      font-weight: 400;
+      color: #443127;
+      margin-bottom: 6px; }
+    .nit-option-date .nit-pinfo textarea {
+      height: 250px; }
+    .nit-option-date .nit-pinfo input {
+      height: 42px; }
+    .nit-option-date .nit-pinfo p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #443127; }
+    .nit-option-date .nit-pinfo .form-group {
+      margin-bottom: 30px; }
+    .nit-option-date .nit-pinfo .btn-submit {
+      background: #ffeaa7;
+      font-size: 16px;
+      font-weight: 500;
+      color: #991010;
+      padding: 15px 50px;
+      height: auto;
+      border-radius: 0; }
+    .nit-option-date .nit-pinfo .btn-cancel {
+      background: #991010;
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+      padding: 15px 50px;
+      height: auto;
+      border-radius: 0;
+      margin-left: 10px; }
+
+footer {
+  background-color: #ffeaa7; }
+  footer p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #443127;
+    text-align: center;
+    padding: 20px 0; }
+
+
+
+
+
+
+.newappoinyment .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content {
+  width: 100%; }
+
+.newappoinyment .ui-widget-header {
+  background: #efefef !important;
+  border-color: #a7a7a7; }
+
+.newappoinyment .ui-widget-content {
+  background: white !important; }
+
+.newappoinyment .ui-datepicker .ui-datepicker-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #443127;
+  font-family: rubik;
+  background: #efefef;
+  padding: 6px 0; }
+
+.newappoinyment .ui-datepicker th {
+  font-size: 20px;
+  font-weight: 500;
+  color: #443127;
+  font-family: rubik; }
+
+.newappoinyment .ui-datepicker-calendar thead tr {
+  border-bottom: 1px solid #eee; }
+
+.newappoinyment .ui-state-default,.newappoinyment .ui-widget-content .ui-state-default,.newappoinyment .ui-widget-header .ui-state-default {
+  margin: 15px;
+  padding: 6px 20px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #a7a7a7;
+  font-family: rubik;
+  text-align: center; }
+
+.newappoinyment .ui-datepicker .ui-datepicker-prev,.newappoinyment .ui-datepicker .ui-datepicker-next {
+  width: 2.8em;
+  height: 2.8em;
+  transform: scale(2);
+  transition: .3s all;
+  border: 0 !important;
+  background: transparent !important;
+  top: 5px; }
+
+.newappoinyment .ui-datepicker {
+  padding: 10px;
+  margin-top: 40px;
+  border: 1px solid #a7a7a7; }
+
+ .nit-hours {
+  padding: 10px;
+  margin-top: 2rem;
+  border: 1px solid #a7a7a7;
+  border-radius: 4px; }
+   .nit-hours ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; }
+   .nit-hours ul li {
+      flex-grow: 1;
+      margin: 15px;
+      padding: 6px 32px;
+      font-size: 22px;
+      font-weight: 400;
+      color: #a7a7a7;
+      font-family: rubik;
+      text-align: center;
+      border: 1px solid #cccccc;
+      display: block;
+      background: #f6f6f6 url(https://code.jquery.com/ui/1.10.4/themes/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
+      transition: .2s all;
+      cursor: pointer;
+      width: 125px;
+      max-width: 125px; }
+   .nit-hours ul li:hover {
+        border: 1px solid #fbcb09;
+        background: #fdf5ce url(https://code.jquery.com/ui/1.10.4/themes/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; }
+
+@media (max-width: 768px) {
+ .newappoinyment  .ui-state-default,.newappoinyment .ui-widget-content .ui-state-default,.newappoinyment .ui-widget-header .ui-state-default {
+    font-size: 15px; }
+
+  .nit-hours ul li, .ui-datepicker th {
+    font-size: 16px; }
+
+  .nit-nav-box .nit-menu .nit-nav-social {
+    display: none; }
+
+   .nit-nav-box .nit-menu .nit-nav-others {
+    border: 0; }
+
+   .nit-nav-box .nit-menu .nit-nav-others a:nth-child(1) {
+    display: none; } }
+@media (max-width: 660px) {
+ .newappoinyment  .ui-state-default,.newappoinyment .ui-widget-content .ui-state-default,.newappoinyment .ui-widget-header .ui-state-default {
+    margin: 0; }
+
+  .nit-nav-box .nit-menu .nit-nav-others a {
+    display: none; }
+
+  .nit-nav-box .nit-menu .nit-nav-others a:last-child {
+    display: block; }
+
+  .navbar-brand {
+    margin-right: 0;
+    padding-left: 1rem; } }
+@media (max-width: 450px) {
+ .newappoinyment  .ui-state-default,.newappoinyment .ui-widget-content .ui-state-default,.newappoinyment .ui-widget-header .ui-state-default {
+    padding: 6px 15px; }
+
+  .nit-menu.w-100 {
+    max-width: 35%; }
+
+  .nit-nav-box .nit-menu .nit-nav-others a:last-child {
+    font-size: 13px;
+    display: flex; } }
+
+
+
+.nit-hours ul li {
+    
+    margin: 12px !important;
+    padding: 6px 15px;
+    font-size: 16px;
+    width: 170px !important;
+    max-width: 128px !important;
+}
+
+/*# sourceMappingURL=style.css.map */
+form#booking-form {
+    max-width: 100%;
+    width: 100%;
+}
+
+table.table td.tooltip_service {/*position: absolute;right: 14%;*/ border: 0;}
+button#content_tooltip {outline: none!important;box-shadow: none!important;font-size: 20px;padding: 2px 11px;margin: 3px 0px;border: 0;}
+.ui-tooltip{top:855px!important;left: 78%!important;box-shadow: none!important;right: 140px!important;text-align: center;}
+
+
+.tooltip_service [data-title]:hover::before {
+  content: attr(data-title);
+  /*position: absolute;
+  bottom: -26px;*/
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 2px;
+  background: red;
+  color: #000;
+  font-size: 12px;
+  font-family: sans-serif;
+  white-space: nowrap;
+}
+
+.ui-widget-content {
+border: 1px solid #000;
+background: #0e0e0e !important;
+color: #f5f3f3;
+opacity: unset;
+}
+
+.ui-tooltip-content:before {
+content: "";
+position: absolute;
+bottom: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: transparent transparent black transparent;
+}
+button#content_tooltip {
+outline: none!important;
+box-shadow: none!important;
+font-size: 20px;
+padding: 2px 11px;
+margin: 3px 0px;
+border: 0;
+position: relative;
+}
+table.dataTable tbody th, table.dataTable tbody td {padding: 5px 5px; font-size: small;border: 1px solid #f1f5f9;}
+
+#second_tooltop{
+	padding: 2px 11px;margin: 3px 0px;border: 0;}
+/*.ui-tooltip{top:1855px!important;left: 78%!important;box-shadow: none!important;left: 140px!important;text-align: center;
+}*/

@@ -1,0 +1,749 @@
+<?php
+function wps_theme_func_addnew()
+{ 
+	
+	global $wpdb;
+	
+error_reporting('e_notice');
+  //$id=base64_decode($_GET['token_id']);
+  $id=$_GET['token_id'];
+   //$id='34';
+ $results = $wpdb->get_results( "SELECT * FROM wp_ap_appointment where id='$id' ");				
+	
+	  $ap_appointment = $wpdb->prefix . 'ap_appointment';
+	  
+	  if($upt){ $page_title="Update Appointment"; }else{ $page_title="Add New Appointment"; }
+	 $result = $wpdb->get_results("SELECT * FROM $ap_appointment WHERE id='$id'");
+      foreach ($result as $print) {} ?>	  
+		 
+		<form action="" method="post" id="booking-form" >	
+		<input type="hidden" id="upt" name="upt"  value="<?php echo $upt;?>" required>
+			<div class="container newappoinyment">
+	        <table class="table newappoinyment">
+	        	<tr><th colspan="2"><h4 class="text-center "><?php echo $page_title?></h4></th></tr>
+				<tr><th colspan="2"><h6 class="text-center text-success"><?php echo $message?></h6></th></tr>
+	  			 <tr>
+				 <input type="hidden" id="order_no" name="order_no" value="<?php echo date("Ymd").date("his");?>">
+                <th>Location</th>
+				<?php
+				$ap_location = $wpdb->prefix . 'ap_location';
+				echo '<td> <select class="form-control" id="location_id" name="location_id" required>';
+				if($print->location_id)
+				{
+					$location_ids = $wpdb->get_results("SELECT * FROM $ap_location where id=$print->location_id ");
+					foreach ($location_ids as $print_location_id)
+					{
+					echo '<option value="'.$print_location_id->id.'">'.$print_location_id->name.'</option>';
+					}
+				}else{
+					echo '<option value="">Select Location</option>';
+				}
+              $location_data = $wpdb->get_results("SELECT * FROM $ap_location order by id DESC ");
+              foreach ($location_data as $print_location) {
+               
+				echo '<option value="'.$print_location->id.'">'.$print_location->name.'</option>';               
+              } ?>
+			  </select>
+			  	<div id="error_location"></div>
+			  <div style="display:none;" id="image"><img width="50" src="<?php echo AP_PLUGIN_DIR?>/assets/images/loder_gif.gif"></div>
+
+			   </td></tr>
+			   	
+				 <tr>
+					<td colspan="2">
+					<table class="table after-add-more addmore ">
+						<tr>
+							<th>Services</th>
+							<td class="new1_btn" id="new1_btn_1">
+								<select class="form-control service_value" id="content_new_1" name="service_id" >
+									<option value="" >Please select location</option>
+									<?php 
+								 $service_id=$print->service_id;
+								  if($service_id!=''){
+									$query= "SELECT * FROM  wp_ap_services where id = $service_id";
+									$results_serv = $wpdb->get_results($query);
+									$option='';
+									foreach($results_serv as $row){?>
+									<option value="<?php echo $row->id?>" <?php if($row->id==$service_id){echo 'selected';}?>><?php echo  $row->name; ?></option>
+									<?php }} ?>
+									</select>
+							
+							</td>
+							<th>Number of Service</th>
+							<td class="new2_btn" id="new2_btn_1">
+								<div class="input-group">
+								  <input type="button" value="-" class="button-minus" data-field="quantity">
+								  <input type="number" min="1" max="999" class="form-control number_service" id="number_service_1" placeholder="Please enter no. of service" autocomplete="off" step="1"   value="<?php echo $print->number_service;?>" name="quantity" class="quantity-field">
+								  <input type="button" value="+" class="button-plus" data-field="quantity">
+								</div>
+								
+							</td>
+							<!--<td class="removebtn minus"></td>-->
+
+						</tr>
+						
+					</table>
+					<div class="new" ></div>
+					<div id="add" onclick="myFunction()"><i class="fa fa-plus btn btn-success" aria-hidden="true"></i></div>
+
+					<table class="table" id="alldatahead">
+						<thead>
+						<th>Location</th>
+						<th>Service Name</th>
+						<th>No. os service</th>
+						<th>Action</th>
+						</thead>
+						<tbody id="alldata">
+						
+						</tbody>
+						
+					</table>
+					</td>
+					
+				 </tr>
+				
+				
+				 <tr><td colspan="2">
+				    
+	                	<div id = "datepicker-2"></div>
+	                	<div class="nit-hours new_slat">
+	                		<div id="error_slot" >
+								<input type="hidden" name="booking_date" class="booking_date" value="<?php echo $print->booking_date?>" id="booking_date" >
+									<input type="hidden" name="start_time" value="<?php echo $print->start_time;?>" id="start_time" >
+									<input type="hidden" name="end_time" value="<?php echo $print->end_time?>" id="end_time" >
+									<input type="hidden" name="service_price" class="price_value"  id="service_price" value="<?php echo $print->price;?>" >
+									
+									<input type="hidden" name="edit_id" id="edit_id" value="<?php echo $print->id;?>" >
+									
+									<input type="hidden" value="<?php echo date('Y-m-d')?>" name="current_booking_date" id="current_booking_date">
+							</div>
+							<?php echo '
+							<div style="display:none;" id="image_cont_1" class="image_cont"><img width="50" src="'.AP_PLUGIN_DIR.'/assets/images/loder_gif.gif"></div>';?>
+								<ul id="content_slot_1" class="content_slot">
+									
+									
+								</ul>
+							
+						</div>
+
+							<div id="adde_slot"> 
+							 </div>
+							
+						<div id="slots">
+							
+						</div>
+						
+	            </div>
+
+                
+			 </table>
+			 <div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Full Name * :</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Please enter name" value="<?php echo $print->name;?>"  required>
+						<div id="error_name"></div>
+					</div>
+					<div class="form-group">
+						<label>Contact Number * :</label>
+						<input type="number" class="form-control" id="phone" name="phone" placeholder="Please enter phone" value="<?php echo $print->phone;?>"  required>
+						<div id="error_phone"></div>
+					</div>
+					<div class="form-group">
+						<label>Road Name * :</label>
+						<input type="text" class="form-control" id="road_name" name="road_name" placeholder="Please enter road name"  value="<?php echo $print->road_name;?>" required>
+						<div id="error_road_name"></div>
+					</div>
+					<div class="form-group">
+						<label>Post Code * :</label>
+						<input type="text" class="form-control" id="post_code" placeholder="Please enter post code" name="post_code" value="<?php echo $print->post_code;?>"  required>
+						<div id="error_post_code"></div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Email address * :</label>
+						<input type="email" class="form-control" id="email" placeholder="Please enter email" name="email" value="<?php echo $print->email;?>"  required>
+						<div id="error_email"></div>
+					</div>
+					<div class="form-group">
+						<label>House Name/Number * :</label>
+						<input type="text" class="form-control" id="house_name" placeholder="Please enter house name" name="house_name" value="<?php echo $print->house_name;?>"  required>
+						<div id="error_house_name"></div>
+					</div>
+					<div class="form-group">
+						<label>Town * :</label>
+						<input type="text" class="form-control" id="town" name="town" placeholder="Please enter town" value="<?php echo $print->town;?>"  required>
+						<div id="error_town"></div>
+					</div>					<div class="form-group">						<label>Country * :</label>						<input type="text" class="form-control" id="country" name="country" placeholder="Please enter country" value="<?php echo $print->country;?>"  required>						<div id="error_town"></div>					</div>
+				</div>
+				
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Additional Information :</label>
+					
+						<button id="second_tooltop" data-toggle="tooltip" disabled><span class="tooltiptext">Site foreman details, Location of flue, access details, Parking restrictions etc.</span><i class="fa fa-info-circle" aria-hidden="true"></i></button>
+
+						
+						<textarea class="form-control" id="description" name="description" placeholder="Please enter description"><?php echo $print->description?></textarea>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group">
+						
+						<?php echo '
+							<div style="display:none;" id="image_submit" class="image_cont"><img width="50" src="'.AP_PLUGIN_DIR.'/assets/images/processing.gif"></div>';?>
+						
+						<button id="newsubmit"  name="newsubmit" type="submit" class="btn btn-info" disabled>
+						
+						Confirm Booking</button>
+						<input type="reset" class="btn btn-success" value="Cancel">
+					</div>
+				</div>
+			</div>
+        </form>
+        
+		</div>
+		
+<script>
+
+				$(document).ready(function(){
+					$("#alldatahead").hide();
+				  $("#add").click(function(){
+					  var chk_lists=($('#alldata tr').length);
+					  
+					  var content_new_1=$("#content_new_1").val();
+					  var content_new_2=$("#content_new_1 option:selected").text();
+					  var location_name=$("#location_id option:selected").text();
+					  var number_service_1=$("#number_service_1").val();
+					  var location_id=$("#location_id").val();
+					  
+					  var nsn=chk_lists+1;
+					  var srno=chk_lists+1;
+					  var nsc=chk_lists+1;
+						if(number_service_1 !='' && content_new_1 !=''){
+							
+							$("#alldata").append("<tr><td><input type='hidden' class='location_"+nsn+"' name='service_"+nsn+"' value='"+location_id+"'>"+location_name+"</td><td><input type='hidden' class='service_"+nsn+"' name='service_"+nsn+"' value='"+content_new_1+"'>"+content_new_2+"</td><td><input type='hidden' name='no_service_"+nsc+"' class='no_service_"+nsc+"' value='"+number_service_1+"'><input type='hidden' name='timeservice_"+nsc+"' class='hidediv timeservice_"+nsc+"' value='"+number_service_1+"'>"+number_service_1+"</td><td><i class='btn btn-danger fa fa-times' aria-hidden='true'></i></td></tr>");
+							var chk_listsss=($('#alldata tr').length);
+							if(chk_listsss !='')
+							  {
+							  $("#alldatahead").show();
+							  }
+							
+							
+						}else{
+							alert("Pleae select service  and servec no.");
+						}
+						$("#content_slot_1").click(function(){
+							$(".hidediv").show();
+							var chk_lists=($('#alldata tr').length);
+									setInterval(function(){ 
+										var start_time=$("#start_time").val();
+										var end_time=$("#end_time").val();
+										$(".hidediv").html(start_time+'-'+end_time);
+									}, 2000);
+									
+						});
+						 $("#alldata").on('click', '.btn-danger', function () {
+							$(this).closest('tr').remove();
+							var chk_lists=($('#alldata tr').length);
+							if(chk_lists==0)
+							{
+								$("#alldatahead").hide();
+							}
+							
+						});
+					
+				  });
+				 
+					
+				});
+				
+				</script>
+				<script>
+
+
+
+
+
+
+$(window).on("scroll",function(){
+	var location_ids=$("#location_id").val();
+	var content_new_1s=$("#content_new_1").val();
+	var number_service_1s=$("#number_service_1").val();
+	
+	if(location_ids !='' && content_new_1s !='' && number_service_1s !='' &&  $(".slot_time").lenth==0){
+		$('.ui-state-active').trigger('click');
+	//alert();
+	}
+	//$("#slots").html(data);
+});
+
+
+//$("#insert_slot").on("click",function(){
+$("#name").on('change',function() {
+	var my_ip='<?php echo $_SERVER['SERVER_ADDR'];?>';
+	var booking_date=$("#booking_date").val();	
+	var start_time=$("#start_time").val();	
+	var end_time=$("#end_time").val();	
+	var service_price=$("#service_price").val();
+	var current_booking_date=$("#current_booking_date").val();	
+	var content_new=$("#content_new_1").val();	
+	var number_service=$("#number_service_1").val();
+	var location_id=$("#location_id").val();
+	var time_schedule=$("#time_schedule").val();
+
+	if(location_id=='') {
+			alert('Please select Location')
+			return false;
+		}
+	if(content_new=='') {
+			alert('Please select service')
+			return false;
+		}
+	if(number_service=='') {
+			alert('Please select number of service')
+			return false;
+		}
+	if(booking_date=='') {
+			alert('Please select booking date')
+			return false;
+		}
+	if (!$(".bg-slot")[0] ) {
+			alert('Please select time slot for service')
+			return false;
+		}
+	
+	
+	var chk_lists=($('#alldata tr').length);
+	var i=1;
+	var j=1;
+	var k=1;
+	var l=1;
+	while(i <= chk_lists)
+	{
+	
+	var location_id=$(".location_"+j).val();
+	var content_new=$(".service_"+k).val();
+	var number_service=$(".no_service_"+l).val();
+	//alert(location_id);
+	
+	$.ajax({	
+		url:"<?php echo AP_PLUGIN_DIR ?>add_slot_sql.php",	
+		type:"POST",	
+		data:{booking_date:booking_date,start_time:start_time,end_time:end_time,service_price:service_price,current_booking_date:current_booking_date,content_new:content_new,number_service:number_service,my_ip:my_ip,location_id:location_id,time_schedule:time_schedule},	
+		success:function(data){	
+			//alert(data);
+			slot_list();
+			
+			$("#booking_date").val('');	
+			$("#start_time").val('');	
+			$("#end_time").val('');	
+			$("#service_price").val('');
+			$("#current_booking_date").val('');	
+			$('#content_slot_1').html('');
+			//load_slit();
+			$("#newsubmit").removeAttr('disabled');
+			
+		}	
+	});	
+	i++;
+	j++;
+	k++;
+	l++;
+	}
+});
+function slot_list(){
+	$.ajax({	
+		url:"<?php echo AP_PLUGIN_DIR ?>add_slot_sql.php",	
+		type:"POST",	
+		data:'html',	
+		success:function(data){
+			$("#slots").html(data);
+			if(data){
+			$("#adde_slot").html("<h6 class='text-success text-center pt-3 pb-0'>Add "+($('.arrays tr').length-1) +" time slot successfully</h6>");
+			$("#location_id").prop("disabled", true);
+			//$("#location_id").removeAttr(disabled);
+			$("#insert_slot").html("Add more service");			
+			
+			}else{
+				$("#adde_slot").html("");
+			}
+		}	
+	});
+}
+function delslot(del_id){
+	//alert('jj');
+	$.ajax({	
+		url:"<?php echo AP_PLUGIN_DIR ?>add_slot_sql.php",	
+		type:"POST",	
+		data:{del_id:del_id},	
+		success:function(data){	
+			$("#slots").html(data);
+			$(".ui-state-active").trigger( "click" );
+			$("#adde_slot").html("<h6 class='text-danger text-center pt-3 pb-0'>Time slot deleted successfully</h6>");
+			var chk_list=($('.arrays tr').length-1);
+			if(chk_list=='-1'){
+			$("#insert_slot").html("Add service");	
+			}
+			
+		}	
+	});
+}
+$(document).ready(function(){
+	var my_ips='<?php echo $_SERVER['SERVER_ADDR'];?>';
+	$.ajax({	
+		url:"<?php echo AP_PLUGIN_DIR ?>add_slot_sql.php",	
+		type:"POST",	
+		data:{my_ips:my_ips},	
+		success:function(data){	
+			$("#slots").html(data);
+			//alert(data);
+		}	
+	});
+});
+$("#booking-form").on('submit',(function(e) {
+    e.preventDefault();
+	
+		//alert('clicked');
+		//return false;
+		var upt=$('#upt').val();
+		var edit_id=$('#edit_id').val();
+		var location_id=$('#location_id').val();
+		var number_service=$('.number_service').last().val();
+		var name=$('#name').val();
+		var phone=$('#phone').val();
+		var road_name=$('#road_name').val();
+		var country=$('#country').val();
+		var email=$('#email').val();
+		var house_name=$('#house_name').val();
+		var town=$('#town').val();
+		var post_code=$('#post_code').val();
+		var start_time=$('#start_time').val();
+		if(location_id==''){
+			$("#error_location").html("<font color='red'>Please select location</font>");
+			$('#location_id').focus('css','red');
+			
+			}
+			else if(number_service==''){
+			$("#error_location").html("");
+			$("#error_number").html("<font color='red'>Please select service number</font>");
+			$('.number_service').last().focus();	
+			}
+			
+		if(name==''){
+		$("#error_number").html("");
+		$("#error_name").html("<font color='red'>Please Fill name</font>");
+		$('#name').focus();	
+		}else if(phone==''){
+			$("#error_name").html("");
+		$("#error_phone").html("<font color='red'>Please Fill Phone</font>");
+		$('#phone').focus();	
+			}else if(road_name==''){
+		$("#phone").html("");
+		$("#error_road_name").html("<font color='red'>Please Fill road name</font>");
+		$('#road_name').focus();
+		}else if(country==''){		
+		$("#road_name").html("");
+		$("#error_country").html("<font color='red'>Please Fill country</font>");
+		$('#country').focus();
+		}else if(email==''){		
+		$("#country").html("");
+		$("#error_email").html("<font color='red'>Please Fill email</font>");
+		$('#email').focus();
+		}else if(house_name==''){		
+		$("#email").html("");
+		$("#error_house_name").html("<font color='red'>Please Fill house name</font>");
+		$('#house_name').focus();
+		}else if(town==''){		
+		$("#house_name").html("");
+		$("#error_town").html("<font color='red'>Please Fill town</font>");
+		$('#town').focus();
+		}else if(post_code==''){		
+		$("#town").html("");
+		$("#error_post_code").html("<font color='red'>Please Fill post code</font>");
+		$('#post_code').focus();
+		} 
+		if($('#slots').html()==0){ //   isEmpty($('#slots')) $("#slots")[0].lenth == 0
+			//if (!$(".bg-slot")[0] ) {
+				alert('Please select time slot for service')
+				return false;
+			//}
+		}
+		$("#newsubmit").click(function(){
+			$("#image_submit").show();
+			$("#newsubmit").css("cursor", "none");
+		});
+    $.ajax({
+          url: "<?php echo AP_PLUGIN_DIR ?>add_appoinment_sql.php",
+      type: "POST",
+      data:  new FormData(this),
+      contentType: false,
+          cache: false,
+      processData:false,
+      success: function(datas)
+        {
+			if(upt != ''){
+			alert('Booking Update successfully');
+			}else{
+				alert('Booking submit successfully');
+				
+			}
+			var edit_id=$("#order_no").val();    //$("#edit_id").val();
+			if(edit_id != '')
+			{
+				window.location.replace('?token_id');
+				var url = '<?php echo home_url();?>';
+				var new_vars=url+'/view-detail/?token_id='+edit_id;
+				window.location.href=new_vars;
+				
+			}else{
+				window.location.replace('?token_id');
+				var url = window.location.href;
+				var new_vars=url+'/view-detail/?token_id='+datas;
+				window.location.href=new_vars;
+			}
+			$("#booking-form")[0].reset();
+        },
+        error: function() 
+        {
+          alert('Form submit failed ! Please try again');
+		  
+        }           
+     });
+		 
+  }));
+
+
+
+
+$(function() {
+$(document).on('change','#location_id',function() {
+	     var location_id = $(this).val();
+		 
+		         $.ajax({
+                type:'POST',
+				beforeSend: function(){
+			
+                 $('#image').show();
+               },
+                url:"<?php echo AP_PLUGIN_DIR ?>add_appoinment_sql.php",
+                data:{location_id:location_id},
+                success:function(data){
+					$(function () {
+						  $('[data-toggle="tooltip"]').tooltip()
+						})
+				 $('#content_new_1').html(data);
+				 console.log(data);
+				 //$('#content_tooltip').prop('title', data);
+				                    
+                },
+				complete: function(){
+                    $('#image').hide();
+              }
+            }); 
+        
+   
+    });
+	 });
+
+
+$(function() {
+$(document).on('change','#location_id',function() {
+  
+	     var location_id = $(this).val();
+		 
+		         $.ajax({
+                type:'POST',
+				beforeSend: function(){
+			
+                 $('#image').show();
+               },
+                url:"<?php echo AP_PLUGIN_DIR ?>ap-tooltip.php",
+                data:{location_id:location_id},
+                success:function(data){
+					if(data !='')
+					{
+					$("#content_tooltip").show();
+					}else{
+						$("#content_tooltip").hide();
+					}
+				 $('#content_tooltip').prop('title', data);
+			               
+                },
+				
+				complete: function(){
+                    $('#image').hide();
+              }
+            }); 
+        
+   
+    });
+	
+	 });
+   
+
+</script>
+  <script>
+         $(function() {
+            $( "#datepicker-2" ).datepicker({
+			dateFormat: "yy-mm-dd",
+			minDate: 0,
+			maxDate: "+2M"
+			});
+			   });
+      </script>
+	  
+	   <script>
+$(function() {
+   
+			
+			$(document).on('change','#location_id,#content_new_1',function() { 
+				$('#content_slot_1').html('');
+			});
+			$(document).on('keyup change','#number_service_1,#content_new_1',function() {
+				$('#content_slot_1').html('');
+			});
+			$(document).on('click','.button-minus,.button-plus',function() { 
+				$('#content_slot_1').html('');
+			});
+
+});
+
+      </script>
+	  
+	  
+	  <script>
+//slot jquery start
+
+         $(function () {
+   
+
+   
+		$(document).on('change','#datepicker-2',function() {
+        var slot_date = $(this).val();
+		var chk_lists=($('#alldata tr').length);
+		
+		$('#booking_date').val(slot_date);
+		
+		var location_id=$('#location_id').val();
+		var service_id=$('#content_new_1').val();
+		
+		var i=1;
+		while(i <= chk_lists)
+		{
+			var ssss=$('#alldata tr .no_service_'+i).val();
+			//alert(ssss);
+			i++;
+			
+		}
+		//var newval=i;
+		//alert(newval);
+		
+		
+		//var number_service=i;//$('#number_service_1').val();
+		var number_service=$('#number_service_1').val();
+		
+		
+		if(chk_lists=='0' && location_id !='' && service_id !='' && number_service !='')
+		{
+			alert('Please add service and number of service click pluse button');
+			return false;
+		}
+		if(location_id!='' && service_id!='' && number_service!=''){
+		  $.ajax({
+		  type:'POST',
+		 beforeSend: function(){
+			  $('#content_slot_1').html('');
+                 $('#image_cont_1').show();
+               },
+         url:'<?php echo AP_PLUGIN_DIR ?>add_appoinment_sql.php',
+		 data:{slot_date:slot_date,loc_id:location_id,service_id:service_id,number_service:number_service},
+		 success: function(data){
+			 //console.log(data);
+			 //console.log(number_service);
+			
+			 $('#content_slot_1').html(data).fadeIn(500);//.fadeIn(500); .hide()
+			 //console.log(data);
+        },
+		complete: function(){
+                    $('#image_cont_1').hide();
+              }
+        }); 
+		
+		}else{
+			
+			alert('Please select location and number service');	
+		}
+		
+		
+    });
+	
+});
+
+
+
+      </script>
+	
+	  
+	  <script>
+ 	$(function() {
+		$(document).on("click",".slot_time",function() {
+		var start_time = $(this).attr('id');
+		var end_time = $(this).attr('data-id');
+		
+		var service_price = $(this).attr('data-price');
+		
+		$('#start_time').val(start_time);
+		$('#end_time').val(end_time);
+		$('#service_price').val(service_price);
+						
+		$(this).addClass('bg-slot').siblings().removeClass('bg-slot');
+			
+});
+	});
+
+
+//for service no.
+function incrementValue(e) {
+  e.preventDefault();
+  var fieldName = $(e.target).data('field');
+  var parent = $(e.target).closest('div');
+  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+  if (!isNaN(currentVal)) {
+    parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+  } else {
+    parent.find('input[name=' + fieldName + ']').val(1);
+  }
+}
+
+function decrementValue(e) {
+  e.preventDefault();
+  var fieldName = $(e.target).data('field');
+  var parent = $(e.target).closest('div');
+  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+  if (!isNaN(currentVal) && currentVal > 1) {
+    parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+  } else {
+    parent.find('input[name=' + fieldName + ']').val(1);
+  }
+}
+
+$('.input-group').on('click', '.button-plus', function(e) {
+  incrementValue(e);
+});
+
+$('.input-group').on('click', '.button-minus', function(e) {
+  decrementValue(e);
+});	
+	
+
+ </script>
+ <script>
+  $( function() {
+   $( document ).tooltip();
+  } );
+  </script>
+<?php } ?>
