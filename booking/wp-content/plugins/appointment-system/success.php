@@ -27,7 +27,7 @@ $ap_connection=$wpdb->prefix . 'ap_connection';
 		$currency_code = $_GET['cc']; 
 		$payment_status = $_GET['st'];
 		
-		print_r($_GET);
+		//print_r($_GET);
 		
 	
 		 // Check if transaction data exists with the same TXN ID. 
@@ -63,8 +63,8 @@ $ap_connection=$wpdb->prefix . 'ap_connection';
 				
 
 
-	$results = $wpdb->get_results("SELECT * from  $ap_appointment where order_no = '".$booking_id."'"); 
-
+	$results = $wpdb->get_results("SELECT * from  $ap_appointment where order_no = '".$orderno."'"); 
+	
 	 $service_id=$order_list[0]->service;
 	$service = $wpdb->get_results("SELECT * from  $ap_services where id='$service_id'"); 
 
@@ -152,6 +152,7 @@ $ap_connection=$wpdb->prefix . 'ap_connection';
 			</table>';
 				}
 					
+					$results = $wpdb->get_results("SELECT * from  $ap_appointment where order_no = '".$orderno."'"); 
 					
 			$htmlContent .= '
 				  </td>

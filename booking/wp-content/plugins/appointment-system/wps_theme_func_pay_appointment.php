@@ -140,6 +140,7 @@ if($results==null)
 						<input type='hidden' name='business' value='info@codexworld.com'>
 						<input type='hidden' name='item_name' value='<?php echo $id; ?>'> 
 						<input type='hidden'  name='item_number' value='<?php echo $results[0]->number_service; ?>'>
+						 <input type="hidden" name="cmd" value="_xclick">
 						<?php 
 						$location_price = $wpdb->get_results( "SELECT SUM(service_price) as total_price FROM $ap_order_list where order_no='$id' ");
 								foreach ($location_price as $price) { ?>
