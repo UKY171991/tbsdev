@@ -1,0 +1,44 @@
+$(document).ready(function(){
+
+$('#example1').calendar({
+ type: 'date'
+});
+
+$('#example2').calendar({
+ type: 'date'
+});
+
+$('#example3').calendar({
+ type: 'date'
+});
+
+$('#example4').calendar({
+ type: 'date'
+});
+
+$('#example5').calendar({
+ type: 'date'
+});
+
+$('#example6').calendar({
+ type: 'date'
+});
+
+
+$('#datepicker').datepicker(
+
+{
+dateFormat: 'dd-mm-yy',
+
+minDate: 0,
+
+beforeShow: function() {
+
+$(this).datepicker('option', $('#datepicker').val());
+
+}
+
+});
+
+
+});

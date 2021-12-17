@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<!-------head-section--------->
+<head>
+<title>New Person Information</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<!-------head-section-ends-------->
+<body>
+
+<div class="logo text-center "><a href="#"><img src="images/title.jpg" alt="logo"></a></div>	
+<div class="new-personform mt-4 mb-4">
+	<div class="container">
+		<form action="" method="post" id="form">
+			<div class="form-group">
+				<label>First/given name(s):</label>
+				<input type="text" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>Last/Surname:</label>
+				<input type="text" class="form-control">
+			</div>				
+			<div class="form-group">
+				<label>Nickname:</label>
+				<input type="text" class="form-control">
+			</div>				
+			<div class="form-group">
+				<label>Suffix:</label>
+				<input type="text" class="form-control">
+			</div>				
+			<div class="form-group">
+				<label>Title:</label>
+				<input type="text" class="form-control">
+			</div>		
+			<div class="form-group">
+				<label>Birth Date:</label>
+				<input type="text" id="datepicker" autocomplete="off" class="form-control">
+			</div>		
+			<div class="form-group">
+				<label>Birth Place:</label>
+				<input type="text" class="form-control">
+			</div>							
+			<div class="form-group">
+				<label>Sex:</label>
+				<select type="text" class="form-control">
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+			</div>				
+			<div class="form-group">
+				<label>Chirstening Date:</label>
+				<input type="text" id="datepicker1" autocomplete="off" class="form-control">
+			</div>				
+			<div class="form-group">
+				<label>Chirstening Place:</label>
+				<input type="text" class="form-control">
+			</div>				
+			<div class="form-group">
+				<label>Death Date:</label>
+				<input type="text" id="datepicker2" autocomplete="off" class="form-control">
+			</div>	
+			<div class="form-group">
+				<label>Death Place:</label>
+				<input type="text" class="form-control">
+			</div>				
+			<div class="form-group">
+				<label>Burial Date:</label>
+				<input type="text" id="datepicker3" autocomplete="off" class="form-control">
+			</div>				
+			<div class="form-group">
+				<label>Burial Place:</label>
+				<input type="text" class="form-control">
+			</div>	
+			<div class="form-group">
+				<label>Baptism Date(LDS):</label>
+				<input type="text" id="datepicker4" autocomplete="off" class="form-control">
+			</div>				
+			<div class="form-group">
+				<label>Baptism Place(LDS):</label>
+				<input type="text" class="form-control">
+			</div>	
+			<div class="form-group">
+				<label>Notes:</label>
+				<textarea type="text" class="form-control"></textarea>
+			</div>	
+			<div class="form-group">
+				<p>Click here to send your details to the editor for uploading to neame family website.<p>
+			</div>	
+			<div class="form-group text-center">
+				<input type="submit" class="btn btn-default" value="Submit">
+			</div>	
+		</form>
+	</div>
+</div>
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$('#form_submit').on('submit',function(event){
+	event.preventDefault()
+	var name = $('.name').val();
+	var phone = $('.phone').val();
+	var email = $('.email').val();
+	var mess = $('.mess').val();
+	$.ajax({
+		url:'email.php',
+		type:'post',
+		data : $('#form').serialize(),
+		success:function(data){
+			if(data == 'send'){
+				$('.messss').html("<h4 class='text-success'>Message send successfully</h4>");
+			}else{
+				$('.messss').html("<h4 class='text-danger'>Message sending feild</h4>");
+			}
+			
+			$('#form_submit')[0].reset();
+		}
+	});
+})
+</script>
+
+</body>
+</html>

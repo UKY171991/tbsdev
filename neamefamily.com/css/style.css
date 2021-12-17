@@ -1,0 +1,23 @@
+/*--------------------------------------Stylesheet----------------------------------------------*/
+body{background:#fff;font-family:'Verdana, Arial, Helvetica', sans-Serif;width:100%;margin:0px auto;overflow-x:hidden!important;box-shadow:none!important;border:0px}
+img, .logo img:focus{max-width:100%;outline:none!important;}
+.btn, .form-control{outline:none!important;box-shadow:none!important;}
+figure, ul, ol, p{margin:0;}
+
+
+@media (min-width:1300px){
+.container{max-width:900px;}
+}
+
+/*-----------------------------------header-section---------------------------------------------*/
+.logo{padding:5px 0px;}
+
+.new-personform .form-group{margin-bottom:12px;float:left;width:100%;display:inline-flex}
+.new-personform label{font-size:16px;width:20%;color:#000;text-shadow:0px 1px 1px rgb(0 0 0 / 25%);text-transform:capitalize}
+.new-personform .ui.input{width:96%;float:right}
+.new-personform .form-control, .new-personform .ui.input input{font-size:16px;padding:10px;height:40px;line-height:normal;border-radius:3px;color:#000;border:1px solid #ccc5c5!important;float:right;width:80%;}
+.new-personformn .form-control::-webkit-input-placeholder{color:#000;font-weight:500;}
+.new-personform textarea.form-control{height:100px!important;}
+.new-personform p{font-size:16px;font-weight:500}
+.new-personform .btn.btn-default{height:40px;line-height:40px;width:120px;font-size:16.4px;background:#212121;color:#fff;text-align:center;padding:0;margin:auto}
+.new-personform .btn.btn-default:hover{background:#666988;}
