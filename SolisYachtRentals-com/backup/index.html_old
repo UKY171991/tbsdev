@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solis Yacht Rentals: Boat Rentals Cabo San Lucas</title>
+    <meta name="description" content="Connect with Solis Yacht Rentals for the best boat rentals in Cabo San Lucas at very budget-friendly rates and enjoy your charter and tasty food with your loved ones.">
+    <META NAME="keywords" CONTENT="Yachts cabo, Cabo yacht life, Boat rentals cabo san lucas, Boat rental cabo, Cabo catamaran">
+    <link rel="stylesheet" href="assets/css/style-freedom.css">
+    <meta name="msvalidate.01" content="D482C0479628C3ABBE35A2905CEF555E" />
+    <meta name="DC.title" content="Cabo yachts, Cabo boats for sale, Cabo sportfish" />
+    <meta name="geo.region" content="US-ME" />
+    <meta name="geo.position" content="39.78373;-100.445882" />
+    <meta name="ICBM" content="39.78373, -100.445882" />
+    <meta name="author" content="Solis Yacht Rentals"/>
+    <meta name="google-site-verification" content="-g3u3ItZWvku_GtsN6FO63NYNQAfnhwjbcmvnEqqK3s" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QPTLKYV90"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5QPTLKYV90');
+</script>
+    <meta name="robots" content="noodp,noydir"/>
+
+<link rel="canonical" href="https://solisyachtrentals.com/">
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60ffe095d6e7610a49ad31a8/1fbjoaj3f';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<!-- Global site tag (gtag.js) - Google Ads: 325088217 --> <script async src=" https://www.googletagmanager.com/gtag/js?id=AW-325088217 "></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-325088217'); </script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="w3l-headers-9">
+        <header>
+            <div class="wrapper">
+                <div class="header">
+                 
+                    <div class="header_logo">
+                        <h1>
+                         <!-- 
+                            <a href="index.html" class="logo">SolisYachtRentals</a>
+                            -->
+						<a class="logo" href="index.html">
+							<img src="assets/LogoImage/NewLogo.png" alt="Logo" title="SolisYachtRentals" />
+						</a>
+                        </h1>
+                    </div>
+                    <div class="bottom-menu-content">
+                        <input type="checkbox" id="nav" />
+                        <label for="nav" class="menu-bar"></label>
+                        <nav>
+                            <ul class="menu">
+                                <li><a href="index.html" class="link-nav">Home</a></li>
+                                <li><a href="about.html" class="link-nav">About</a></li>
+                                <li>
+                                    <!-- First Tier Drop Down -->
+                                    <label for="drop-2" class="toggle toogle-2">Fleet <span class="fa fa-angle-down"
+                                            aria-hidden="true"></span></label>
+                                    <a href="fleet.html" class="link-nav dropdown-toggle">Fleet <span
+                                            class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                    <input type="checkbox" id="drop-2" />
+                                    
+                                    <ul class="first-dropdwon">
+                                        <li><a href="fleet.html#Searay32">32-Searay</a></li>
+                                        <li><a href="fleet.html#Searay37">37-Searay</a></li>
+                                        <li><a href="fleet.html#Azimut40">40-Azimut</a></li>
+                                        <li><a href="fleet.html#Absolute42">42-Absolute</a></li>
+                                        <li><a href="fleet.html#Sea-Ray-Fly-Bridge45">45-Sea-Ray-Fly-Bridge</a></li>
+                                        <li><a href="fleet.html#Cruiser52">52-Cruiser</a></li>
+                                        <li><a href="fleet.html#Sea-Ray55">55-Sea-Ray</a></li>
+                                        <li><a href="fleet.html#Searay65">65-Searay</a></li>
+                                        <li><a href="fleet.html#Viking-Pricess70">70-Viking-Pricess</a></li>
+                                        <li><a href="fleet.html#Azimut80">80-Azimut</a></li>
+                                        <li><a href="fleet.html#Azimut95">95-Azimut</a></li>
+                                        <li><a href="fleet.html#Azimut100">100-Azimut</a></li>
+                                    </ul>
+                                </li>
+                               
+                                                               
+                                <li>
+                                    <label for="drop-4" class="toggle toogle-2">Services <span class="fa fa-angle-down"
+                                            aria-hidden="true"></span></label>
+                                    <a href="#shop" class="link-nav dropdown-toggle">Services <span class="fa fa-angle-down"
+                                            aria-hidden="true"></span></a>
+                                    <input type="checkbox" id="drop-4" />
+                                    <ul >
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contacts.html" class="link-nav">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+    </div>
+    <!-- covers -->
+    <section class="w3l-covers-9-main">
+        <div class="covers-9">
+            <div class="csslider infinity" id="slider1">
+                <input type="radio" name="slides" checked="checked" id="slides_1" />
+                <input type="radio" name="slides" id="slides_2" />
+                <input type="radio" name="slides" id="slides_3" />
+                <input type="radio" name="slides" id="slides_4" />
+                <ul class="banner_slide_bg">
+                    <li>
+                        <div class="wrapper">
+                            <div class="cover-top-center-9">
+                                <div class="w3ls_cover_txt-9">
+                                    <h6 class="tag-cover-9">Quality Services</h6>
+                                    <h3 class="title-cover-9">Solis Yacht Rentals</h3>
+                                    <p class="para-cover-9">We offer exquisite Yacht in Los Cabos.&nbsp; Catering dishes prepared and properly made by our world-class chef. Enjoy your charter and tasty food.</p>
+                                    <a href="services.html" class="actionbg button-cover-9">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <div class="cover-top-center-9">
+                                <div class="w3ls_cover_txt-9">
+                                    <h6 class="tag-cover-9">Great Experience</h6>
+                                    <h3 class="title-cover-9">Wedding Receptions</h3>
+                                    <p class="para-cover-9">With four fully air-conditioned luxury yachts, we have the premier party venues and event spaces in Tampa Bay for social celebrations ranging from 25-100 guests</p>
+                                    <a href="services.html" class="actionbg button-cover-9">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <div class="cover-top-center-9">
+                                <div class="w3ls_cover_txt-9">
+                                    <h6 class="tag-cover-9">Enjoy</h6>
+                                    <h3 class="title-cover-9">Private Snorkeling Cruises</h3>
+                                    <p class="para-cover-9">Enjoy Los Cabos with our week long charter, we follow your wishes of you and your guests, customize the experience to make your travel a memorable experience.</p>
+                                    <a href="services.html" class="actionbg button-cover-9">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <div class="cover-top-center-9">
+                                <div class="w3ls_cover_txt-9">
+                                    <h6 class="tag-cover-9">Week Long Charters</h6>
+                                    <h3 class="title-cover-9">Luxurious Cruises</h3>
+                                    <p class="para-cover-9">We offer exquisite food dishes prepared and properly made by a world-class chef. Enjoy your fishing and tasty food.</p>
+                                    <a href="services.html" class="actionbg button-cover-9">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="arrows">
+                    <label for="slides_1"></label>
+                    <label for="slides_2"></label>
+                    <label for="slides_3"></label>
+                    <label for="slides_4"></label>
+                </div>
+                <div class="navigation">
+                    <div>
+                        <label for="slides_1"></label>
+                        <label for="slides_2"></label>
+                        <label for="slides_3"></label>
+                        <label for="slides_4"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //covers -->
+ 
+    <section class="w3l-grids-6">
+        <!-- grids -->
+        <div class="grids-layout">
+            <div class="wrapper">
+                <h3 class="title-main">OUR COVID GUIDELINES</h3>
+                <p class="sub-title">Based on the recommendations by the World Health Organization (WHO) regarding COVID-19 and the State of Baja sur, we have placed the procedures listed below as an added safety measure for our valued guests.
+It is our goal to go above and beyond any guidelines or requirements currently in place.
+</p>
+                <div class="d-grid grid-column-3">
+                    <div class="gd-innf">
+                        <a href="https://solisyachtrentals.com/chef.html"><img class="img-responsive" src="assets/HomeImage/Azimut-55-14-400x284.jpg" alt="Cabo boats for sale"></a>
+                        <h3><a href="https://solisyachtrentals.com/chef.html" class="vv-link">Chef</a></h3>
+                    </div>
+                    <div class="gd-innf">
+                        <a href="https://solisyachtrentals.com/birthdays.html"><img class="img-responsive" src="assets/HomeImage/birthday.jpg" alt="Cabo sportfish"></a>
+                        <h3><a href="https://solisyachtrentals.com/birthdays.html" class="vv-link">Birthdays&nbsp;</a></h3>
+                    </div>
+                    <div class="gd-innf">
+                        <a href="https://solisyachtrentals.com/anniversaries.html"><img class="img-responsive" src="assets/HomeImage/Anniversaries.jpg" alt="Cabo yacht rental"></a>
+                        <h3><a href="https://solisyachtrentals.com/anniversaries.html" class="vv-link">Anniversaries</a></h3>
+                    </div>
+                </div>
+                <div class="d-grid grid-column-3 second-grids">
+                    <div class="gd-innf">
+                        <a href="https://www.solisyachtrentals.com/fishing.html"><img class="img-responsive" src="assets/HomeImage/fishing.jpg" alt="Fishing charters in cabo"></a>
+                        <h3><a href="https://www.solisyachtrentals.com/fishing.html" class="vv-link">Fishing&nbsp;</a></h3>
+                    </div>
+                    <div class="gd-innf">
+                        <a href="https://solisyachtrentals.com/whalewatching.html"><img class="img-responsive" src="assets/HomeImage/Whale-Watching.jpg" alt="Luxury yachts cabo"></a>
+                        <h3><a href="https://solisyachtrentals.com/whalewatching.html" class="vv-link">Whale Watching&nbsp;</a></h3>
+                    </div>
+                    <div class="gd-innf">
+                        <a href="https://solisyachtrentals.com/cruises.html"><img class="img-responsive" src="assets/HomeImage/Baby-Bolaz-14-400x284.jpg" alt="Cabo san lucas yacht rentals"></a>
+                        <h3><a href="https://solisyachtrentals.com/cruises.html" class="vv-link">Cruises</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //grids -->
+    </section>
+    <!-- Call to action 29 block -->
+    <section class="w3l-call-to-action-29">
+        <div class="cal-action-29">
+            <div class="wrapper">
+                <div class="action-main-29 align-center">
+                    <h4 class="cal-action-text-29">
+                        <a href="book.html">We thank you for your continued business and look forward to having you on board!</a>
+                    </h4>
+                    <p class="sub-paragraph actioncall-29">join us for the experience of a lifetime with cabo Charters the number one luxury yacht rental company in Los cabos and La paz. Guarantees an unforgettable yacht charter experience that cannot be matched. We're experienced, we care, and we have an amazing attention to detail</p>
+                    <p class="sub-paragraph actioncall-29">Providing the best Private Yacht Rentals in Los cabos and La paz, with premium services and exclusive attention. When you hire a private luxury yacht from us, you can be sure that you get the best product in the region.</p>
+                    <a href="about.html" class="buttonbg">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //Call to action 29 block -->
+    <!-- call to action 19 -->
+    <section class="w3l-call-to-action-19">
+        <div class="action-19">
+            <div class="wrapper">
+                <div class="callaction">
+                    <div class="d-grid grid-col-2 grid-action-19">
+                        <div class="column2-action-19">
+                            <a href="#"><img src="assets/HomeImage/Solis-Yacht-Rentals51.jpg" alt="Yacht rental cabo san lucas" /></a>
+                        </div>
+                        <div class="column1-action-19">
+                            <h2 class="call-head-action-19">Our Staff</h2>
+                            <ul>
+                            <li>Our team members wear mask when in contact with our guests</li>
+                            <li>While we realize boats are somewhat confined, we always try to maintain a safe distance from our guests.</li>
+                            <li>Each team member has their temperature checked prior to each charter.</li>
+                            <li>Regular hand disinfection and hand washing is completed multiple times throughout the day.</li>
+                            <li>Hand sanitizer is readily available in various areas of each boat.</li>
+                            </ul>
+                            <div class="main-action-19">
+                                <a href="#" class="buttonbg action-btn-19">Learn More</a>
+                                <a href="#" class="button button-dark">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <section class="w3l-call-to-action-19">
+        <div class="action-19">
+            <div class="wrapper">
+                <div class="callaction">
+                    <div class="d-grid grid-col-2 grid-action-19">
+                        <div class="column2-action-19">
+                        <h2 class="call-head-action-19">The Boat</h2>
+                            <ul>
+                            <li>A sanitization scrub down of all inside and outside areas and surfaces, prior to and following each charter.</li>
+                            <li>Towels and Linen are washed and disinfected prior to and after each use.</li>
+                            </ul>
+                            <div class="main-action-19">
+                                <a href="#" class="buttonbg action-btn-19">Learn More</a>
+                                <a href="#" class="button button-dark">Explore</a>
+                            </div>
+                           
+                        </div>
+                        <div class="column1-action-19">
+                             <a href="#"><img src="assets/HomeImage/Whale-Watching.jpg" alt="Luxury yachts cabo" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- //call to action 19 -->
+
+    <!-- specifications -->
+<section class="w3l-specifications-9">
+<div class="home-video-sec"> 
+<iframe width="800" height="500"
+src="https://www.youtube.com/embed/KCkUv6IGflM" >
+</iframe>
+</div>
+  
+        </div>
+        <!-- //specifications -->
+    </section>
+    <!-- teams 32 block -->
+    <section class="w3l-call-to-action-19">
+        <div class="action-19">
+            <div class="wrapper">
+                <div class="full-width-content">
+                    <h3>You can rent a yacht for a birthday party or any special event, and also visit the many destinations which are famous for accommodating luxury yachts. This is your chance to cruise through the water on a private yacht hired exclusively for you. We have many choices for yacht rental, so you can choose a boat which fits your individual requirements.</h3>
+                    <p>yacht charters are popular for wedding rehearsal dinners, wedding receptions, family reunions, corporate retreats and team building events, as well as with smaller groups seeking a private and luxurious day tour or excursion.</p>
+                    
+                    <div class="full-content-lists">
+                    <ul>
+                    <li>Wedding Rehearsal Dinners</li>
+                    <li>Private Getaways</li>
+                    <li>Private Snorkeling Cruises</li>
+                    <li>Deep Sea Fishing</li>
+                    <li>Corporate Retreats</li>
+                    <li>Sailing Trips</li>
+                    <li>Club or Organization Outings</li>
+                    </ul>
+                    <ul>
+                    <li>Wedding Receptions</li>
+                    <li>Luxurious Cruises</li>
+                    <li>Sunset or Moonlight Cruises</li>
+                    <li>Corporate Team Building Events</li>
+                    <li>Family Reunions</li>
+                    <li>Organized Tour Groups</li>
+                    </ul>
+                    </div>
+                    <p>takes pride in making your yacht rental charter experience in Cabo personal and unforgettable. Our yachts boat charter vary immensely in size, style and function. Our inventory consist of fishing yachts, luxury yachts, catamarans, and sailing yachts available for charter ranging from 40' to over 100' and we strive to make every crewed cabo yacht event uniquely different, covering all the details of your boating experience. Yachting with us means 5-Star Service, bi-lingual valet, catered food and your choice of beverages, customized itineraries and a healthy combination of travel options. Our certified and licensed Captains look forward to delivering you to your destination while a crew caters to your every need during your Private luxury yacht charter. We take satisfaction in exceeding every clients' expectations and look forward to helping you plan your dream getaway with us.</p>
+                    <p>Our boats are the perfect venue for wedding proposals, weddings, anniversaries, honeymoons, birthdays, corporate events, retirement parties, graduations, reunions, For Spring Breakers, Bachelor / Bachelorette parties, or just coming to have fun. All events come catered with onboard prepared exquisite cuisine from one of our chefs, and all of your favorite drinks and - of course - the best music all hosted by your bi-lingual valet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //teams 32 block -->
+    <!-- w3l-customers-7 -->
+
+    <!-- //w3l-customers-7 -->
+    <section class="w3l-footer-16">
+        <!-- w3l-footer-16 -->
+        <div class="w3l-footer-16-main">
+            <div class="wrapper">
+                <div class="grid">
+                    <div class="column">
+                        <h2><a href="index.html" class="logo-2">SolisYachtRentals</a></h2>
+                        <p>All rights reserved.<br>©2021 
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h3>About</h3>
+                        <ul class="footer-gd-16">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Fleet </h3>
+                        <ul class="footer-gd-16">
+                            <li><a href="fleet.html">Fleet </a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contacts.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="column column3">
+                        <h3>Social</h3>
+                        <ul class="footer-gd-16">
+                            <li><a href="https://www.facebook.com/solisyacht/">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/yachts_solis/">Instagram</a></li>
+                            <li><a href="https://twitter.com/yachtssol">Tweeter</a></li>
+                             <li><a href="https://youtube.com/channel/UCJPuHkuj1jXjJA1OTgXrknw">Youtube</a></li> 
+
+                         <!--   <li><a href="https://www.facebook.com/solisluxuryyachts">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/luxu.ryyachts">Instagram</a></li>
+                            <li><a href="https://twitter.com/solisfishing">Tweeter</a></li>   -->
+                        </ul>
+                    </div>
+                    <div class="column column4">
+                        <h3>Follow Us </h3>
+                        <div class="buttons-teams">
+                                <a href="https://www.facebook.com/solisyacht/"><span class="fa fa-facebook-square" aria-hidden="true"></span></a>
+                                <a href="https://twitter.com/yachtssol"><span class="fa fa-twitter-square" aria-hidden="true"></span></a>
+                                <a href="https://www.instagram.com/yachts_solis/"><span class="fa fa-instagram-square" aria-hidden="true"></span></a>
+                                <a href="https://youtube.com/channel/UCJPuHkuj1jXjJA1OTgXrknw"><span class="fa fa-youtube-square" aria-hidden="true"></span></a>
+                            </div>
+                     </div>
+
+<div class="column column5">
+                        <h3>Visit Us: </h3>
+                        <div class="">
+                                <p>Marina Cabo San Lucas <br>
+                                       B.C.S. México.</p>
+                            </div>
+                     <br>
+                       <h3>Call US: </h3>
+                        <div class="">
+                                <p>MX: <a href="tel:624-174-53120">(624) 174 53120</a><br>
+                                       USA: <a href="tel:+1-619-488-2821">+1-619-488-2821</a><br>
+                                       <a href="mailto:info@SolisYachtRentals.com">info@SolisYachtRentals.com</a></p>
+                                <p><a href="calendar.html">Calendar </a></p>
+                            </div>                        
+</div>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fa fa-angle-up"></span>
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Website",
+"url": "https://www.solisyachtrentals.com/",
+"name": "Solis Yacht Rentals",
+"contactpoint": {
+  "@type": "ContactPoint",
+  "email": "info@solisyachtrentals.com"
+}
+}
+</script> 
+
+        <!-- //move top -->
+    </section>
+    <!-- //w3l-footer-16 -->
+</body>
+
+</html>
