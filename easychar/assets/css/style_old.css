@@ -1,0 +1,2964 @@
+@font-face {
+  font-family: 'HeaveneticaCond8';
+  src: url(../font/HeaveneticaCond8_HvySH.ttf); }
+@font-face {
+  font-family: 'Muli';
+  src: url(../font/Muli.ttf); }
+@font-face {
+  font-family: 'Muli-Bold';
+  src: url(../font/Muli-Bold.ttf); }
+@font-face {
+  font-family: 'Muli-SemiBold';
+  src: url(../font/Muli-SemiBold.ttf); }
+@font-face {
+  font-family: 'Britannic Bold';
+  src: url(../font/BRITANIC.TTF); }
+@font-face {
+  font-family: 'Muli-Light';
+  src: url(../font/Muli-Light.ttf); }
+.res-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  background-color: #004400;
+  padding: 5px 20px;
+  letter-spacing: 0.8px;
+  border: 2px solid transparent; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Mulish'; }
+
+* {
+  font-family: 'Mulish', sans-serif;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+
+ul, li, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.tcolor {
+  color: #004400; }
+
+.nit-close, nav.nit-nav #menu-header-menu li:first-child {
+  display: none; }
+
+footer, section, .img-box {
+  overflow: hidden; }
+
+img {
+  -webkit-transition: .5s ease;
+  transition: .5s ease; }
+  img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+
+.tbg {
+  background-color: #004400; }
+
+a, a:hover {
+  text-decoration: none; }
+
+a {
+  color: #37c5f2; }
+
+.grid {
+  display: grid; }
+
+.nit-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 50% 50%; }
+
+.nit-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 33.33% 33.33% 33.33%; }
+
+.nit-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 25% 25% 25% 25%; }
+
+.oh {
+  overflow: hidden; }
+
+.fal, .far, .fad {
+  font-family: "Font Awesome 5 Free" !important; }
+
+.fas {
+  font-family: "Font Awesome 5 Pro" !important; }
+
+.fab {
+  font-family: "Font Awesome 5 Brands" !important; }
+
+.nit-row, .nit-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.nit-grid {
+  display: grid; }
+
+.navbar-toggler {
+  display: none; }
+
+#marker, .marker2 {
+  position: absolute;
+  background: #004400;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  display: block;
+  -webkit-transition: .5s linear;
+  transition: .5s linear; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px; } }
+.nit-heading {
+  font-size: 48px;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 45px;
+  text-align: center; }
+
+.text-theme {
+  color: #00c300 !important; }
+
+.tbtn {
+  color: #004400;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 15px;
+  font-weight: 700;
+  background-color: #004400;
+  padding: 13px 38px;
+  position: relative;
+  outline: none;
+  border: 0; }
+  .tbtn:hover {
+    background-color: #003000;
+    color: #fff;
+    -webkit-box-shadow: 0 0 20px #00aa00;
+            box-shadow: 0 0 20px #00aa00; }
+    .tbtn:hover::before {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      -webkit-transition: -webkit-transform .5s;
+      transition: -webkit-transform .5s;
+      transition: transform .5s;
+      transition: transform .5s, -webkit-transform .5s; }
+    .tbtn:hover::after {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      -webkit-transition: -webkit-transform .5s;
+      transition: -webkit-transform .5s;
+      transition: transform .5s;
+      transition: transform .5s, -webkit-transform .5s;
+      -webkit-transition-delay: .5s;
+              transition-delay: .5s; }
+
+.nit-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  color: #004400;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .nit-arrow i {
+    color: #004400;
+    margin-left: 5px;
+    font-size: 17px; }
+  .nit-arrow:hover i {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px); }
+
+.nit-down-arrow {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  padding: 4px 13px;
+  border: 2px solid #004400;
+  color: #004400;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  -webkit-transition: .7s;
+  transition: .7s;
+  overflow: hidden; }
+  .nit-down-arrow b {
+    display: block;
+    width: 0px;
+    height: 0px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 50%;
+    position: absolute;
+    background: #004400;
+    -webkit-transition: width 0.7s, height 0.7s;
+    transition: width 0.7s, height 0.7s;
+    z-index: -1; }
+  .nit-down-arrow:hover {
+    border-color: #004400; }
+    .nit-down-arrow:hover b {
+      width: 500px;
+      height: 500px; }
+    .nit-down-arrow:hover i {
+      color: #fff; }
+    .nit-down-arrow:hover span {
+      color: #fff; }
+  .nit-down-arrow i {
+    color: #004400;
+    line-height: 12px;
+    font-size: 22px;
+    margin-left: 1em; }
+
+.nit-container-fluid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.fixed-header {
+  border-bottom: 1px solid #ddd; }
+
+header {
+  padding: 15px 0 15px;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top: 10px solid #004400; }
+  header::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 200%;
+    height: 100%;
+    -webkit-box-shadow: 0 0 50px 100px #fff;
+            box-shadow: 0 0 50px 100px #fff;
+    content: '';
+    bottom: 100%; }
+  header .side-menu {
+    position: fixed;
+    top: 0;
+    overflow-y: scroll;
+    right: -100%;
+    background: -webkit-gradient(linear, left top, right top, from(#00bf00), to(#004400));
+    background: linear-gradient(to right, #00bf00 0%, #004400 100%);
+    -webkit-transition: .8s ease-out;
+    transition: .8s ease-out;
+    height: 100%;
+    padding: 0; }
+    header .side-menu .inner-wrapper .btn-close {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      margin-top: 1em;
+      padding-bottom: 1em; }
+      header .side-menu .inner-wrapper .btn-close i {
+        width: 50px;
+        margin-right: 1em;
+        height: 50px;
+        cursor: pointer;
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font-size: 30px; }
+    header .side-menu .inner-wrapper nav ul li a {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 10px 2em;
+      color: #fff;
+      font-size: 21px; }
+
+.nit-header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative; }
+  .nit-header-menu .nit-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .nit-header-menu .nit-navigation .nit-icon-based-menu .fa-search {
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 17px; }
+    .nit-header-menu .nit-navigation .nit-icon-based-menu .nit-menu-icon {
+      display: inline-block;
+      width: 30px;
+      height: 2px;
+      background: #000;
+      position: relative;
+      line-height: 0.5;
+      top: -8px; }
+      .nit-header-menu .nit-navigation .nit-icon-based-menu .nit-menu-icon::before, .nit-header-menu .nit-navigation .nit-icon-based-menu .nit-menu-icon:after {
+        content: '';
+        display: inline-block;
+        height: 2px;
+        background: #000;
+        position: relative;
+        left: 0;
+        -webkit-transition: .6s;
+        transition: .6s; }
+      .nit-header-menu .nit-navigation .nit-icon-based-menu .nit-menu-icon::before {
+        width: 25px;
+        top: 5px; }
+      .nit-header-menu .nit-navigation .nit-icon-based-menu .nit-menu-icon:after {
+        width: 20px;
+        top: 8px; }
+      .nit-header-menu .nit-navigation .nit-icon-based-menu .nit-menu-icon:hover::before, .nit-header-menu .nit-navigation .nit-icon-based-menu .nit-menu-icon:hover::after {
+        width: 30px; }
+    .nit-header-menu .nit-navigation .nit-close-btn {
+      display: none; }
+    .nit-header-menu .nit-navigation ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .nit-header-menu .nit-navigation ul li a {
+        font-size: 14px;
+        font-weight: 700;
+        color: #000000;
+        margin-left: 20px;
+        text-transform: uppercase; }
+
+.logo img {
+  -webkit-transform: none;
+          transform: none; }
+
+.nit-slider {
+  position: relative; }
+  .nit-slider .slider-img {
+    height: calc(100vh - 83px);
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .nit-slider .item > img {
+    height: 710px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .nit-slider .item {
+    text-align: center; }
+    .nit-slider .item img {
+      -webkit-transform: none;
+              transform: none; }
+    .nit-slider .item .container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 100%; }
+    .nit-slider .item .item-content {
+      z-index: 1;
+      top: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .nit-slider .item .item-content .content-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-transform: none !important;
+                transform: none !important;
+        background: rgba(255, 255, 255, 0.749);
+        position: relative;
+        text-align: center;
+        border-radius: 50%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 490px;
+        width: 490px;
+        margin-top: 5em; }
+        .nit-slider .item .item-content .content-box .recycle-leaves {
+          position: static;
+          right: 1em;
+          bottom: 1em;
+          -webkit-animation: spin 3s linear infinite;
+                  animation: spin 3s linear infinite;
+          -webkit-animation: none;
+                  animation: none;
+          margin-bottom: 1em; }
+        .nit-slider .item .item-content .content-box .nit-banner-title {
+          font-size: 65px;
+          font-weight: 900;
+          color: #000;
+          text-align: center;
+          text-transform: uppercase;
+          margin-bottom: .1em;
+          letter-spacing: 4px; }
+          .nit-slider .item .item-content .content-box .nit-banner-title:hover {
+            -webkit-transform: translateY(-10px);
+                    transform: translateY(-10px); }
+        .nit-slider .item .item-content .content-box .nit-banner-subtitle {
+          font-size: 20px;
+          font-weight: 700;
+          color: #000;
+          margin-bottom: 1.1em;
+          text-align: center; }
+          .nit-slider .item .item-content .content-box .nit-banner-subtitle:hover {
+            -webkit-transform: translateY(-10px);
+                    transform: translateY(-10px); }
+        .nit-slider .item .item-content .content-box .tbtn {
+          text-transform: uppercase;
+          margin-top: 1.4em; }
+        .nit-slider .item .item-content .content-box .nit-down-arrow {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          border-radius: 50px;
+          padding: 8px 15px;
+          border: 2px solid #004400;
+          color: #004400;
+          font-size: 20px;
+          font-weight: 700;
+          -webkit-animation: jiggle 1.7s linear infinite;
+                  animation: jiggle 1.7s linear infinite;
+          overflow: hidden;
+          position: relative;
+          -webkit-transition: .7s;
+          transition: .7s; }
+          .nit-slider .item .item-content .content-box .nit-down-arrow b {
+            display: block;
+            width: 0px;
+            height: 0px;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            border-radius: 50%;
+            position: absolute;
+            background: #004400;
+            -webkit-transition: width 0.7s, height 0.7s;
+            transition: width 0.7s, height 0.7s;
+            z-index: -1; }
+          .nit-slider .item .item-content .content-box .nit-down-arrow:hover {
+            border-color: #004400;
+            -webkit-box-shadow: 0 0 20px #00aa00;
+                    box-shadow: 0 0 20px #00aa00; }
+            .nit-slider .item .item-content .content-box .nit-down-arrow:hover b {
+              width: 500px;
+              height: 500px; }
+            .nit-slider .item .item-content .content-box .nit-down-arrow:hover i {
+              color: #fff; }
+            .nit-slider .item .item-content .content-box .nit-down-arrow:hover span {
+              color: #fff; }
+          .nit-slider .item .item-content .content-box .nit-down-arrow i {
+            color: #004400;
+            line-height: 12px;
+            font-size: 22px;
+            margin-left: 1em; }
+
+.nit-mission-goal {
+  background: -webkit-gradient(linear, left top, left bottom, from(#004400), color-stop(64%, #004400), color-stop(50%, #f1f1f1), to(#f1f1f1));
+  background: linear-gradient(to bottom, #004400 0%, #004400 64%, #f1f1f1 50%, #f1f1f1 100%);
+  padding-bottom: 83px; }
+  .nit-mission-goal .nit-mission-goal-box .nit-flex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 45px 0; }
+    .nit-mission-goal .nit-mission-goal-box .nit-flex .nit-box {
+      width: calc(50% - 1em);
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px; }
+      .nit-mission-goal .nit-mission-goal-box .nit-flex .nit-box:nth-child(1):hover {
+        -webkit-transform: translateX(-20px);
+                transform: translateX(-20px); }
+      .nit-mission-goal .nit-mission-goal-box .nit-flex .nit-box:nth-child(2):hover {
+        -webkit-transform: translateX(20px);
+                transform: translateX(20px); }
+      .nit-mission-goal .nit-mission-goal-box .nit-flex .nit-box:hover .nit-title {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px); }
+        .nit-mission-goal .nit-mission-goal-box .nit-flex .nit-box:hover .nit-title::before {
+          -webkit-transform: translateX(-10px);
+                  transform: translateX(-10px);
+          opacity: 1; }
+      .nit-mission-goal .nit-mission-goal-box .nit-flex .nit-box .nit-title {
+        font-size: 26px;
+        font-weight: 500;
+        color: #000;
+        position: relative; }
+        .nit-mission-goal .nit-mission-goal-box .nit-flex .nit-box .nit-title::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 5px;
+          background: #000;
+          height: 80%;
+          top: 0;
+          bottom: 0;
+          -webkit-transition: .3s ease;
+          transition: .3s ease;
+          opacity: 0;
+          margin: auto; }
+      .nit-mission-goal .nit-mission-goal-box .nit-flex .nit-box p {
+        font-size: 20px;
+        font-weight: 300;
+        color: #000; }
+  .nit-mission-goal .nit-mission-goal-box .nit-img-box .img-box:hover img {
+    -webkit-filter: hue-rotate(45deg);
+            filter: hue-rotate(45deg); }
+
+.nit-abt {
+  background: -webkit-gradient(linear, left bottom, left top, from(#004400), color-stop(31%, #004400), color-stop(0%, #f1f1f1), to(#f1f1f1));
+  background: linear-gradient(to top, #004400 0%, #004400 31%, #f1f1f1 0%, #f1f1f1 100%);
+  padding-bottom: 75px; }
+  .nit-abt .nit-abt-box .nit-flex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 45px;
+    position: relative; }
+    .nit-abt .nit-abt-box .nit-flex #marker {
+      -webkit-box-shadow: 0 0 20px #ddd;
+              box-shadow: 0 0 20px #ddd;
+      background: #fff; }
+    .nit-abt .nit-abt-box .nit-flex .nit-box {
+      width: calc(50% - 1em);
+      padding: 40px;
+      position: relative;
+      z-index: 1; }
+      .nit-abt .nit-abt-box .nit-flex .nit-box:hover .nit-title {
+        text-decoration: underline; }
+      .nit-abt .nit-abt-box .nit-flex .nit-box .nit-title {
+        font-size: 26px;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 25px; }
+      .nit-abt .nit-abt-box .nit-flex .nit-box p {
+        font-size: 20px;
+        font-weight: 300;
+        color: #000;
+        margin-bottom: 0; }
+      .nit-abt .nit-abt-box .nit-flex .nit-box a {
+        margin-top: 30px; }
+      .nit-abt .nit-abt-box .nit-flex .nit-box .nit-down-arrow {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        border-radius: 50px;
+        padding: 6px 19px;
+        border: 2px solid #004400;
+        color: #004400;
+        font-size: 19px;
+        font-weight: 700;
+        position: relative;
+        overflow: hidden;
+        -webkit-transition: .7s;
+        transition: .7s; }
+        .nit-abt .nit-abt-box .nit-flex .nit-box .nit-down-arrow b {
+          display: block;
+          width: 0px;
+          height: 0px;
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          border-radius: 50%;
+          position: absolute;
+          background: #004400;
+          -webkit-transition: width 0.6s, height 0.7s;
+          transition: width 0.6s, height 0.7s;
+          z-index: -1; }
+        .nit-abt .nit-abt-box .nit-flex .nit-box .nit-down-arrow:hover {
+          border-color: #004400;
+          -webkit-box-shadow: 0 0 20px #00aa00;
+                  box-shadow: 0 0 20px #00aa00; }
+          .nit-abt .nit-abt-box .nit-flex .nit-box .nit-down-arrow:hover b {
+            width: 500px;
+            height: 500px; }
+          .nit-abt .nit-abt-box .nit-flex .nit-box .nit-down-arrow:hover i {
+            color: #fff; }
+          .nit-abt .nit-abt-box .nit-flex .nit-box .nit-down-arrow:hover span {
+            color: #fff; }
+        .nit-abt .nit-abt-box .nit-flex .nit-box .nit-down-arrow i {
+          color: #004400;
+          line-height: 12px;
+          font-size: 22px;
+          margin-left: 1em; }
+  .nit-abt .nit-abt-box .nit-img-box .img-box:hover img {
+    -webkit-filter: hue-rotate(45deg);
+            filter: hue-rotate(45deg); }
+
+.nit-products {
+  background: -webkit-gradient(linear, left top, left bottom, from(#004400), color-stop(68%, #004400), color-stop(50%, #f1f1f1), to(#f1f1f1));
+  background: linear-gradient(to bottom, #004400 0%, #004400 68%, #f1f1f1 50%, #f1f1f1 100%);
+  padding-bottom: 83px; }
+  .nit-products .nit-products-box .nit-heading {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700; }
+  .nit-products .nit-products-box .nit-flex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 50px; }
+    .nit-products .nit-products-box .nit-flex .nit-box {
+      width: calc(33.33% - .7em);
+      background-color: #fff;
+      padding: 33px;
+      border-radius: 10px; }
+      .nit-products .nit-products-box .nit-flex .nit-box:nth-child(1):hover {
+        -webkit-transform: translateX(-20px);
+                transform: translateX(-20px); }
+      .nit-products .nit-products-box .nit-flex .nit-box:nth-child(3):hover {
+        -webkit-transform: translateX(20px);
+                transform: translateX(20px); }
+      .nit-products .nit-products-box .nit-flex .nit-box:hover .nit-title {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px); }
+        .nit-products .nit-products-box .nit-flex .nit-box:hover .nit-title::before {
+          -webkit-transform: translateX(-10px);
+                  transform: translateX(-10px);
+          opacity: 1; }
+      .nit-products .nit-products-box .nit-flex .nit-box:hover {
+        background: #fff; }
+        .nit-products .nit-products-box .nit-flex .nit-box:hover .nit-title, .nit-products .nit-products-box .nit-flex .nit-box:hover p {
+          color: #000; }
+      .nit-products .nit-products-box .nit-flex .nit-box .nit-title {
+        font-size: 26px;
+        font-weight: 500;
+        color: #000;
+        position: relative; }
+        .nit-products .nit-products-box .nit-flex .nit-box .nit-title::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 5px;
+          background: #000;
+          height: 80%;
+          top: 0;
+          bottom: 0;
+          -webkit-transition: .3s ease;
+          transition: .3s ease;
+          opacity: 0;
+          margin: auto; }
+      .nit-products .nit-products-box .nit-flex .nit-box p {
+        font-size: 20px;
+        font-weight: 300;
+        color: #000;
+        margin-bottom: 0; }
+
+.nit-application-area {
+  background: #f1f1f1; }
+  .nit-application-area .nit-application-area-box .nit-flex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 0;
+    margin-bottom: calc(60px - 2em); }
+    .nit-application-area .nit-application-area-box .nit-flex .nit-box {
+      width: calc(50% - 1em);
+      padding: 20px;
+      margin-bottom: 2em;
+      background: #fff; }
+      .nit-application-area .nit-application-area-box .nit-flex .nit-box:hover {
+        background-color: #004d00; }
+        .nit-application-area .nit-application-area-box .nit-flex .nit-box:hover .nit-content .nit-discription p {
+          color: #fff; }
+        .nit-application-area .nit-application-area-box .nit-flex .nit-box:hover .nit-content .nit-title {
+          color: #fff;
+          text-decoration: underline; }
+        .nit-application-area .nit-application-area-box .nit-flex .nit-box:hover .nit-content .nit-down-arrow {
+          color: #004400; }
+          .nit-application-area .nit-application-area-box .nit-flex .nit-box:hover .nit-content .nit-down-arrow span {
+            color: #004400; }
+      .nit-application-area .nit-application-area-box .nit-flex .nit-box .nit-content {
+        padding-top: 20px;
+        padding-bottom: 15px; }
+        .nit-application-area .nit-application-area-box .nit-flex .nit-box .nit-content .nit-title {
+          font-size: 30px;
+          font-weight: 500;
+          color: #000;
+          min-height: 72px; }
+        .nit-application-area .nit-application-area-box .nit-flex .nit-box .nit-content .nit-down-arrow {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          border-radius: 50px;
+          padding: 2px 10px;
+          border: 2px solid #004400;
+          color: #004400;
+          font-size: 16px;
+          font-weight: 700;
+          background: #fff;
+          cursor: pointer;
+          outline: none;
+          margin: 7px 0; }
+          .nit-application-area .nit-application-area-box .nit-flex .nit-box .nit-content .nit-down-arrow:hover {
+            -webkit-animation: neonBlue 2s ease-in-out infinite;
+                    animation: neonBlue 2s ease-in-out infinite;
+            border-color: #004400;
+            -webkit-box-shadow: 0 0 20px #00aa00;
+                    box-shadow: 0 0 20px #00aa00; }
+            .nit-application-area .nit-application-area-box .nit-flex .nit-box .nit-content .nit-down-arrow:hover i {
+              color: #004400; }
+          .nit-application-area .nit-application-area-box .nit-flex .nit-box .nit-content .nit-down-arrow:focus + .nit-discription {
+            display: block; }
+          .nit-application-area .nit-application-area-box .nit-flex .nit-box .nit-content .nit-down-arrow i {
+            color: #004400;
+            line-height: 12px;
+            font-size: 15px;
+            margin-left: 1em; }
+        .nit-application-area .nit-application-area-box .nit-flex .nit-box .nit-content .nit-discription {
+          display: none;
+          padding: 10px 0px; }
+          .nit-application-area .nit-application-area-box .nit-flex .nit-box .nit-content .nit-discription p {
+            color: #000;
+            margin-bottom: 0; }
+
+.nit-services {
+  padding: 50px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#004400), color-stop(77%, #004400), color-stop(50%, #f1f1f1), to(#f1f1f1));
+  background: linear-gradient(to bottom, #004400 0%, #004400 77%, #f1f1f1 50%, #f1f1f1 100%); }
+  .nit-services .nit-services-box .nit-heading-box {
+    margin-bottom: 20px; }
+    .nit-services .nit-services-box .nit-heading-box .nit-heading {
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 10px; }
+    .nit-services .nit-services-box .nit-heading-box p {
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      line-height: 1.5;
+      font-weight: 300; }
+  .nit-services .nit-services-box .nit-flex {
+    margin-bottom: 50px; }
+    .nit-services .nit-services-box .nit-flex .nit-img-box {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 38.5%;
+              flex: 0 0 38.5%; }
+      .nit-services .nit-services-box .nit-flex .nit-img-box .img-box:hover img {
+        -webkit-transform: translateX(-20px);
+                transform: translateX(-20px); }
+    .nit-services .nit-services-box .nit-flex .nit-content-box {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 61.5%;
+              flex: 0 0 61.5%;
+      background: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 1em 2em; }
+      .nit-services .nit-services-box .nit-flex .nit-content-box ul li {
+        font-size: 18px;
+        font-weight: 400;
+        color: #000;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        -webkit-transform: translateX(1em);
+                transform: translateX(1em); }
+        .nit-services .nit-services-box .nit-flex .nit-content-box ul li:hover {
+          -webkit-transform: translateX(1.5em);
+                  transform: translateX(1.5em); }
+        .nit-services .nit-services-box .nit-flex .nit-content-box ul li:hover::before {
+          -webkit-animation: spin 3s linear infinite;
+                  animation: spin 3s linear infinite;
+          -webkit-animation: none;
+                  animation: none; }
+        .nit-services .nit-services-box .nit-flex .nit-content-box ul li::before {
+          content: "\f00c";
+          font-family: "Font Awesome 5 Pro" !important;
+          font-weight: 900;
+          margin-right: 10px;
+          display: inline-block;
+          position: absolute;
+          -webkit-transition: 1s ease;
+          transition: 1s ease;
+          left: -30px; }
+
+.nit-co2-section {
+  padding: 3em 0;
+  background: #f1f1f1; }
+  .nit-co2-section .nit-heading {
+    color: #000;
+    text-align: center;
+    font-weight: 700; }
+  .nit-co2-section .nit-flex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative; }
+    .nit-co2-section .nit-flex .marker2 {
+      -webkit-box-shadow: 0 0 20px #ddd;
+              box-shadow: 0 0 20px #ddd;
+      background: #fff; }
+    .nit-co2-section .nit-flex .nit-box {
+      width: 49%;
+      padding: 1.5em;
+      border-radius: 10px;
+      z-index: 1;
+      position: relative; }
+      .nit-co2-section .nit-flex .nit-box .nit-title {
+        font-size: 28px;
+        font-weight: 500;
+        color: #000; }
+      .nit-co2-section .nit-flex .nit-box p {
+        font-size: 20px;
+        font-weight: 400;
+        color: #000; }
+      .nit-co2-section .nit-flex .nit-box .nit-down-arrow {
+        padding: 5px 13px;
+        z-index: 1; }
+    .nit-co2-section .nit-flex .nit-in-flex {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .nit-co2-section .nit-flex .nit-in-flex .nit-box {
+        width: 40%; }
+        .nit-co2-section .nit-flex .nit-in-flex .nit-box p {
+          font-size: 30px;
+          font-weight: 400;
+          color: #000;
+          margin-bottom: 1em; }
+      .nit-co2-section .nit-flex .nit-in-flex .nit-img-box {
+        width: 40%; }
+  .nit-co2-section .nit-in-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2em; }
+    .nit-co2-section .nit-in-flex .nit-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .nit-co2-section .nit-in-flex .nit-box p {
+        font-size: 26px;
+        font-weight: 500;
+        color: #000;
+        line-height: 1.5; }
+      .nit-co2-section .nit-in-flex .nit-box b {
+        font-weight: 800; }
+    .nit-co2-section .nit-in-flex .nit-img-box {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      text-align: center; }
+
+.nit-co2-responsible-farming {
+  background: #f1f1f1;
+  padding: 1em 0 60px; }
+  .nit-co2-responsible-farming .nit-flex .nit-farming-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 35%;
+            flex: 0 0 35%;
+    padding-right: 3em; }
+    .nit-co2-responsible-farming .nit-flex .nit-farming-box .nit-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 20px; }
+    .nit-co2-responsible-farming .nit-flex .nit-farming-box .nit-discription p {
+      font-size: 19px;
+      font-weight: 300;
+      color: #000; }
+    .nit-co2-responsible-farming .nit-flex .nit-farming-box .nit-discription b {
+      font-weight: 700; }
+    .nit-co2-responsible-farming .nit-flex .nit-farming-box .nit-img-box .img-box:hover img {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9); }
+  .nit-co2-responsible-farming .nit-flex .nit-organic-box {
+    background: #fff;
+    padding: 2em;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 65%;
+            flex: 0 0 65%;
+    padding-bottom: 1em; }
+    .nit-co2-responsible-farming .nit-flex .nit-organic-box .nit-content-box:first-child {
+      border-bottom: 1px solid #ddd;
+      padding-right: 5em;
+      margin-bottom: 1em;
+      padding-bottom: 1em; }
+    .nit-co2-responsible-farming .nit-flex .nit-organic-box .nit-content-box .nit-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 20px; }
+    .nit-co2-responsible-farming .nit-flex .nit-organic-box .nit-content-box ul li {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 10px 0;
+      -webkit-transform: translateX(2em);
+              transform: translateX(2em); }
+      .nit-co2-responsible-farming .nit-flex .nit-organic-box .nit-content-box ul li::before {
+        content: "\f1b8";
+        font-family: "Font Awesome 5 Pro" !important;
+        font-weight: 900;
+        margin-right: 10px;
+        display: inline-block;
+        padding-top: 2px;
+        position: absolute;
+        left: -20px; }
+      .nit-co2-responsible-farming .nit-flex .nit-organic-box .nit-content-box ul li:hover::before {
+        -webkit-animation: spin 3s linear infinite;
+                animation: spin 3s linear infinite; }
+
+.nit-figures {
+  background: #004400;
+  padding: 60px; }
+  .nit-figures .nit-figures-box .nit-heading-box {
+    text-align: center; }
+    .nit-figures .nit-figures-box .nit-heading-box .nit-heading {
+      color: #FFF;
+      font-weight: 700; }
+    .nit-figures .nit-figures-box .nit-heading-box p {
+      color: #fff; }
+  .nit-figures .nit-figures-box .nit-fig-options-box {
+    background: url(../images/more/cr-1.png) no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-size: 76%;
+    position: relative; }
+    .nit-figures .nit-figures-box .nit-fig-options-box .nit-animate-overlay {
+      position: absolute;
+      background: #004400;
+      height: 100%;
+      width: 68%;
+      right: 0;
+      top: 0;
+      display: block;
+      -webkit-animation: glide1 6s linear infinite;
+              animation: glide1 6s linear infinite; }
+    .nit-figures .nit-figures-box .nit-fig-options-box.cr-2 {
+      background: url(../images/more/cr-2.png) no-repeat;
+      background-size: 76%; }
+      .nit-figures .nit-figures-box .nit-fig-options-box.cr-2 .nit-box-right .nit-fig-img img {
+        -webkit-animation: ride 6s ease infinite;
+                animation: ride 6s ease infinite; }
+    .nit-figures .nit-figures-box .nit-fig-options-box .nit-box-left {
+      text-align: center;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 30%;
+              flex: 0 0 30%;
+      height: 355px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-left: 2em; }
+      .nit-figures .nit-figures-box .nit-fig-options-box .nit-box-left .nit-title {
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 1em; }
+    .nit-figures .nit-figures-box .nit-fig-options-box .nit-arrow-box {
+      margin-bottom: 5.5em;
+      z-index: 1; }
+      .nit-figures .nit-figures-box .nit-fig-options-box .nit-arrow-box img {
+        -webkit-animation: blink 6s ease-in-out infinite;
+                animation: blink 6s ease-in-out infinite; }
+    .nit-figures .nit-figures-box .nit-fig-options-box .nit-box-right {
+      text-align: center;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 23%;
+              flex: 0 0 23%;
+      z-index: 1; }
+      .nit-figures .nit-figures-box .nit-fig-options-box .nit-box-right .nit-fig-img img {
+        -webkit-animation: takeoff 6s ease infinite;
+                animation: takeoff 6s ease infinite;
+        -webkit-transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+                transform: translate(-270px, 130px) rotate(-10deg) scale(0.8); }
+      .nit-figures .nit-figures-box .nit-fig-options-box .nit-box-right .nit-title {
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 1.5em;
+        line-height: 1.7; }
+
+@-webkit-keyframes glide1 {
+  0% {
+    width: 68%; }
+  50% {
+    width: 0%; }
+  100% {
+    width: 0%; } }
+
+@keyframes glide1 {
+  0% {
+    width: 68%; }
+  50% {
+    width: 0%; }
+  100% {
+    width: 0%; } }
+@-webkit-keyframes takeoff {
+  0% {
+    -webkit-transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+            transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+    opacity: 0; }
+  40% {
+    -webkit-transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+            transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+    opacity: 0; }
+  65% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; }
+  75% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(170px, -110px) rotate(-10deg) scale(0.8);
+            transform: translate(170px, -110px) rotate(-10deg) scale(0.8);
+    opacity: 0; } }
+@keyframes takeoff {
+  0% {
+    -webkit-transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+            transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+    opacity: 0; }
+  40% {
+    -webkit-transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+            transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+    opacity: 0; }
+  65% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; }
+  75% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(170px, -110px) rotate(-10deg) scale(0.8);
+            transform: translate(170px, -110px) rotate(-10deg) scale(0.8);
+    opacity: 0; } }
+@-webkit-keyframes ride {
+  0% {
+    -webkit-transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+            transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+    opacity: 0; }
+  40% {
+    -webkit-transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+            transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+    opacity: 0; }
+  65% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; }
+  75% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(170px, 0) scale(0.8);
+            transform: translate(170px, 0) scale(0.8);
+    opacity: 0; } }
+@keyframes ride {
+  0% {
+    -webkit-transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+            transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+    opacity: 0; }
+  40% {
+    -webkit-transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+            transform: translate(-270px, 130px) rotate(-10deg) scale(0.8);
+    opacity: 0; }
+  65% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; }
+  75% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(170px, 0) scale(0.8);
+            transform: translate(170px, 0) scale(0.8);
+    opacity: 0; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  40% {
+    opacity: 0;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  60% {
+    opacity: 0;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  70% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  80% {
+    opacity: 0;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  90% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0); } }
+@keyframes blink {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  40% {
+    opacity: 0;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  60% {
+    opacity: 0;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  70% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  80% {
+    opacity: 0;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  90% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0); } }
+.nit-mue {
+  padding: 55px 0; }
+  .nit-mue .nit-mue-box {
+    text-align: center; }
+    .nit-mue .nit-mue-box .nit-heading {
+      margin-bottom: 35px; }
+    .nit-mue .nit-mue-box p {
+      font-size: 22px;
+      font-weight: 400;
+      color: #000;
+      text-align: center;
+      margin-bottom: 0; }
+
+.nit-benefits {
+  background: #f1f1f1; }
+  .nit-benefits .nit-benefits-box {
+    padding: 45px 0; }
+    .nit-benefits .nit-benefits-box nit-heading {
+      font-weight: 700;
+      margin-bottom: 40px; }
+    .nit-benefits .nit-benefits-box .marker2 {
+      background: #fff;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); }
+    .nit-benefits .nit-benefits-box .nit-flex {
+      position: relative; }
+      .nit-benefits .nit-benefits-box .nit-flex .nit-box {
+        text-align: center;
+        padding: 2.5em 1em .6em;
+        border: 1px solid #ddd;
+        width: 33%;
+        position: relative;
+        z-index: 1; }
+        .nit-benefits .nit-benefits-box .nit-flex .nit-box:nth-child(2) {
+          border-left: 0;
+          border-right: 0; }
+        .nit-benefits .nit-benefits-box .nit-flex .nit-box:hover {
+          border-color: transparent; }
+          .nit-benefits .nit-benefits-box .nit-flex .nit-box:hover img {
+            -webkit-filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.2));
+                    filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.2)); }
+        .nit-benefits .nit-benefits-box .nit-flex .nit-box .nit-title-box {
+          text-align: center;
+          margin-top: 2em; }
+          .nit-benefits .nit-benefits-box .nit-flex .nit-box .nit-title-box .nit-title {
+            font-size: 24px;
+            font-weight: 400;
+            color: #000;
+            text-align: center;
+            line-height: 1.4; }
+
+.nit-feedstock {
+  background: #004400;
+  padding: 70px 0; }
+  .nit-feedstock .nit-feedstock-box .nit-heading {
+    font-weight: 700;
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 43px;
+    text-align: left; }
+  .nit-feedstock .nit-feedstock-box .nit-list-box {
+    margin-bottom: 2em; }
+    .nit-feedstock .nit-feedstock-box .nit-list-box ul li {
+      font-size: 22px;
+      font-weight: 400;
+      color: #fff;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 5px 0; }
+      .nit-feedstock .nit-feedstock-box .nit-list-box ul li::before {
+        content: "\f1b8";
+        font-family: "Font Awesome 5 Pro" !important;
+        font-weight: 900;
+        margin-right: 10px;
+        display: inline-block;
+        padding-top: 2px;
+        color: #fff; }
+  .nit-feedstock .nit-feedstock-box .item {
+    background: #fff;
+    position: relative;
+    text-align: center;
+    padding: 0em;
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden; }
+    .nit-feedstock .nit-feedstock-box .item .arrow-p {
+      position: absolute;
+      left: 1em;
+      top: 10px;
+      width: auto;
+      -webkit-animation: twing 1s ease-in-out infinite;
+              animation: twing 1s ease-in-out infinite; }
+    .nit-feedstock .nit-feedstock-box .item .img-box {
+      text-align: center;
+      overflow: inherit; }
+      .nit-feedstock .nit-feedstock-box .item .img-box img {
+        width: auto;
+        margin: auto; }
+
+@-webkit-keyframes twing {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes twing {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.nit-database-user-table {
+  padding: 60px 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#191c19), color-stop(38%, #191c19), color-stop(0%, #f1f1f1), to(#f1f1f1));
+  background: linear-gradient(to top, #191c19 0%, #191c19 38%, #f1f1f1 0%, #f1f1f1 100%); }
+  .nit-database-user-table .nit-database-user-table-box .nit-heading-box .nit-heading {
+    font-weight: 700;
+    margin-bottom: 25px; }
+  .nit-database-user-table .nit-database-user-table-box .nit-heading-box p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    padding-bottom: 35px; }
+  .nit-database-user-table .nit-database-user-table-box .nit-form-table ::-webkit-input-placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #004400;
+    text-align: center; }
+  .nit-database-user-table .nit-database-user-table-box .nit-form-table :-ms-input-placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #004400;
+    text-align: center; }
+  .nit-database-user-table .nit-database-user-table-box .nit-form-table ::-ms-input-placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #004400;
+    text-align: center; }
+  .nit-database-user-table .nit-database-user-table-box .nit-form-table ::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #004400;
+    text-align: center; }
+  .nit-database-user-table .nit-database-user-table-box .nit-form-table .nit-filter-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .nit-database-user-table .nit-database-user-table-box .nit-form-table .nit-filter-box .nit-input-box {
+      width: 23%;
+      margin-right: 1em; }
+      .nit-database-user-table .nit-database-user-table-box .nit-form-table .nit-filter-box .nit-input-box input {
+        background: #fff;
+        padding: 10px 15px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid #007700;
+        width: 100%; }
+        .nit-database-user-table .nit-database-user-table-box .nit-form-table .nit-filter-box .nit-input-box input:focus {
+          border: 2px solid #004400; }
+  .nit-database-user-table .nit-database-user-table-box .nit-img-box {
+    margin-top: 50px; }
+
+.nit-contact {
+  background: #191c19;
+  padding-bottom: 40px;
+  padding-top: 10px; }
+  .nit-contact .nit-contact-box .nit-flex .nit-brand-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    padding: 2em;
+    background: #212221;
+    text-align: center; }
+  .nit-contact .nit-contact-box .nit-flex .nit-con-form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+    padding-left: 2.5em;
+    padding-top: 12px; }
+    .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-address-box ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-address-box ul li label {
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff;
+        position: relative; }
+        .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-address-box ul li label::after {
+          content: '';
+          top: 110%;
+          width: 60%;
+          background: #fff;
+          height: 2px;
+          left: 0;
+          position: absolute; }
+      .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-address-box ul li a {
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        display: block;
+        margin-top: 1em; }
+    .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-top: 30px; }
+      .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group {
+        width: calc(50% - 15px);
+        margin-right: 15px;
+        margin-bottom: 20px; }
+        .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group.submit-button-box {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group.submit-button-box .nit-form-result .nit-form-response-msg {
+            font-size: 18px;
+            background: #fff;
+            padding: 10px 1em;
+            display: inline-block;
+            -webkit-animation: bounce 1s ease infinite;
+                    animation: bounce 1s ease infinite; }
+        .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group label {
+          font-size: 14px;
+          font-weight: 400;
+          color: #fff;
+          margin-bottom: 10px; }
+        .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group textarea, .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group input {
+          border: 0;
+          background: #fff;
+          height: 50px;
+          width: 100%;
+          padding: 10px; }
+        .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group textarea {
+          height: 100px; }
+        .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group .tbtn {
+          width: auto;
+          height: auto;
+          color: #FFF;
+          font-size: 16px;
+          border: 2px solid #fff;
+          border-radius: 50px;
+          padding: 7px 2em;
+          background: #191c19;
+          outline: none;
+          overflow: hidden;
+          position: relative;
+          -webkit-transition: .7s;
+          transition: .7s; }
+          .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group .tbtn b {
+            display: block;
+            width: 0px;
+            height: 0px;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            border-radius: 50%;
+            position: absolute;
+            background: #fff;
+            -webkit-transition: width 0.7s, height 0.7s;
+            transition: width 0.7s, height 0.7s; }
+          .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group .tbtn:hover {
+            border-color: #191c19;
+            color: #191c19;
+            -webkit-box-shadow: 0 0 20px #fff;
+                    box-shadow: 0 0 20px #fff; }
+            .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group .tbtn:hover b {
+              width: 500px;
+              height: 500px; }
+            .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group .tbtn:hover i {
+              color: #191c19; }
+            .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group .tbtn:hover span {
+              color: #191c19; }
+          .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group .tbtn span, .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group .tbtn i {
+            position: relative;
+            z-index: 1; }
+
+.nit-img-box .img-box:hover img {
+  -webkit-filter: hue-rotate(45deg);
+          filter: hue-rotate(45deg); }
+
+.nit-landing-images {
+  background: -webkit-gradient(linear, left top, left bottom, from(#004400), color-stop(82%, #004400), color-stop(50%, #f1f1f1), to(#f1f1f1));
+  background: linear-gradient(to bottom, #004400 0%, #004400 82%, #f1f1f1 50%, #f1f1f1 100%);
+  padding: 50px 0; }
+  .nit-landing-images .nit-landing-images-box .nit-img-box .nit-img {
+    background: white;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2em;
+    padding: 2em;
+    border: 4px solid #004400;
+    text-align: center; }
+
+.nit-blog {
+  padding: 60px 0; }
+  .nit-blog .nit-blog-box .marker2 {
+    background: #eee;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); }
+  .nit-blog .nit-blog-box .nit-flex {
+    position: relative; }
+    .nit-blog .nit-blog-box .nit-flex .nit-box {
+      width: 33.33%;
+      padding: 30px 20px;
+      border: 1px solid #ddd;
+      z-index: 1; }
+      .nit-blog .nit-blog-box .nit-flex .nit-box:nth-child(1), .nit-blog .nit-blog-box .nit-flex .nit-box:nth-child(2) {
+        width: 50%; }
+      .nit-blog .nit-blog-box .nit-flex .nit-box .nit-date {
+        font-size: 13px;
+        font-weight: 700;
+        color: #004400;
+        text-transform: uppercase;
+        background: #f2fff2;
+        display: inline-block;
+        margin-bottom: 15px; }
+      .nit-blog .nit-blog-box .nit-flex .nit-box .nit-content .nit-title {
+        font-size: 24px; }
+      .nit-blog .nit-blog-box .nit-flex .nit-box .nit-content .nit-subtitle {
+        font-size: 18px;
+        font-weight: 700; }
+      .nit-blog .nit-blog-box .nit-flex .nit-box .nit-content p {
+        font-size: 20px; }
+
+.nit-blog-detail {
+  padding: 60px 0; }
+  .nit-blog-detail .nit-barnd-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 1.5em; }
+  .nit-blog-detail .nit-heading-box {
+    text-align: center; }
+    .nit-blog-detail .nit-heading-box .nit-heading {
+      font-size: 50px;
+      font-weight: 700;
+      color: #000;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1em; }
+      .nit-blog-detail .nit-heading-box .nit-heading::after {
+        position: absolute;
+        top: 110%;
+        height: 10px;
+        background: #00be00;
+        widows: 70%;
+        content: ""; }
+  .nit-blog-detail .nit-content-box img {
+    -webkit-transform: none;
+            transform: none; }
+  .nit-blog-detail .nit-content-box .nit-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000; }
+  .nit-blog-detail .nit-content-box p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #5a5a5a;
+    line-height: 1.7; }
+  .nit-blog-detail .nit-content-box .nit-subtitle {
+    font-size: 25px;
+    font-weight: 700;
+    color: #04a204;
+    margin-top: 12px; }
+  .nit-blog-detail .nit-content-box .nit-subtitle-2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5a5a5a;
+    margin-top: 5px;
+    margin-bottom: 0; }
+
+footer {
+  padding-top: 3em;
+  background: #000000;
+  color: #fff;
+  position: relative; }
+  footer::before {
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: #004400;
+    content: '';
+    position: absolute;
+    top: -0px;
+    left: 0; }
+  footer a {
+    color: #fff; }
+  footer .nit-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    footer .nit-flex h4 {
+      font-size: 22px;
+      margin-bottom: 1em;
+      font-weight: 500;
+      position: relative;
+      color: #fff; }
+    footer .nit-flex.nit-o-social ul li a {
+      -webkit-transition: .5s ease;
+      transition: .5s ease;
+      display: inline-block; }
+      footer .nit-flex.nit-o-social ul li a i {
+        font-size: 25px;
+        margin-right: 15px; }
+      footer .nit-flex.nit-o-social ul li a:hover {
+        color: #004400;
+        -webkit-transform: translateY(5px);
+                transform: translateY(5px); }
+    footer .nit-flex.nit-f-contact a {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #76787b; }
+      footer .nit-flex.nit-f-contact a:hover {
+        color: #fff; }
+    footer .nit-flex.nit-f-contact ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      footer .nit-flex.nit-f-contact ul li .nit-icon-box {
+        margin-right: 1em; }
+        footer .nit-flex.nit-f-contact ul li .nit-icon-box i {
+          font-size: 20px; }
+      footer .nit-flex.nit-f-contact ul li .nit-c-detail {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        footer .nit-flex.nit-f-contact ul li .nit-c-detail span {
+          margin-right: 5px; }
+        footer .nit-flex.nit-f-contact ul li .nit-c-detail a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+  footer .nit-newsletter {
+    width: 30%;
+    padding-left: 3em; }
+    footer .nit-newsletter p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #76787b; }
+    footer .nit-newsletter ::-webkit-input-placeholder {
+      font-size: 14px;
+      font-weight: 400;
+      color: #76787b; }
+    footer .nit-newsletter :-ms-input-placeholder {
+      font-size: 14px;
+      font-weight: 400;
+      color: #76787b; }
+    footer .nit-newsletter ::-ms-input-placeholder {
+      font-size: 14px;
+      font-weight: 400;
+      color: #76787b; }
+    footer .nit-newsletter ::placeholder {
+      font-size: 14px;
+      font-weight: 400;
+      color: #76787b; }
+    footer .nit-newsletter .nit-form-box input {
+      border: 1px solid grey;
+      background: #000;
+      height: 50px;
+      padding: 1em;
+      width: 100%;
+      margin-bottom: 10px; }
+    footer .nit-newsletter .nit-form-box [type="submit"] {
+      background: #004400;
+      border: 0;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff; }
+      footer .nit-newsletter .nit-form-box [type="submit"]:hover {
+        background-color: #003000;
+        color: #fff;
+        -webkit-box-shadow: 0 0 20px #00aa00;
+                box-shadow: 0 0 20px #00aa00; }
+  footer .nit-row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 2em; }
+  footer .nit-f-abt {
+    width: 20%; }
+  footer .nit-o-others {
+    width: 20%; }
+    footer .nit-o-others ul {
+      padding-left: 8px; }
+      footer .nit-o-others ul li {
+        -webkit-transition: .5s ease;
+        transition: .5s ease;
+        margin-bottom: 10px; }
+        footer .nit-o-others ul li::before {
+          content: "\f101";
+          font-family: "Font Awesome 5 Pro" !important;
+          font-weight: 900;
+          font-size: 14px;
+          color: #76787b;
+          display: inline-block;
+          margin-right: 8px;
+          -webkit-transition: .3s ease;
+          transition: .3s ease;
+          -webkit-transform: scale(0);
+                  transform: scale(0); }
+        footer .nit-o-others ul li a {
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 400;
+          color: #76787b; }
+        footer .nit-o-others ul li:hover {
+          -webkit-transform: translateX(10px);
+                  transform: translateX(10px); }
+          footer .nit-o-others ul li:hover::before {
+            -webkit-transform: scale(1);
+                    transform: scale(1); }
+          footer .nit-o-others ul li:hover a {
+            color: #fff; }
+  footer .nit-f-abt {
+    width: 26%; }
+  footer .nit-o-social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  footer .nit-f-contact li {
+    line-height: 2; }
+
+.nit-footer-bottom {
+  background-color: #000;
+  padding: 5px; }
+  .nit-footer-bottom .nit-flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-top: 1px solid #101010;
+    padding: 1.1em 0; }
+  .nit-footer-bottom a {
+    color: #37c5f2; }
+  .nit-footer-bottom .nit-content p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #76787b; }
+    .nit-footer-bottom .nit-content p a {
+      color: #76787b;
+      text-decoration: underline; }
+  .nit-footer-bottom .nit-footer-social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .nit-footer-bottom .nit-footer-social ul li:hover a i {
+      background: #76787b;
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px); }
+    .nit-footer-bottom .nit-footer-social ul li a i {
+      color: #fff;
+      width: 35px;
+      height: 35px;
+      background: #101010;
+      margin-left: 3px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+
+.nit-banner {
+  position: relative; }
+  .nit-banner img {
+    -webkit-transform: none;
+            transform: none; }
+  .nit-banner .nit-banner-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .nit-banner .nit-banner-content .nit-banner-title {
+      font-size: 80px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase; }
+      .nit-banner .nit-banner-content .nit-banner-title:hover {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+        text-shadow: 0 0 50px #000; }
+
+.career {
+  padding: 60px 0; }
+  .career .nit-title-box .nit-title {
+    font-size: 23px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.7;
+    margin-bottom: 1em; }
+  .career .nit-title-box .nit-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #004400;
+    line-height: 1.7;
+    font-style: oblique;
+    margin-bottom: 1.5em; }
+  .career .nit-form-box ::-webkit-input-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #585757; }
+  .career .nit-form-box :-ms-input-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #585757; }
+  .career .nit-form-box ::-ms-input-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #585757; }
+  .career .nit-form-box ::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #585757; }
+  .career .nit-form-box .form-control {
+    background: #f5f5f5;
+    border: 0;
+    margin-bottom: 30px;
+    border-radius: 0;
+    height: 55px; }
+    .career .nit-form-box .form-control:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem #bdcfe9;
+              box-shadow: 0 0 0 0.2rem #bdcfe9; }
+  .career .nit-form-box label {
+    font-size: 18px;
+    font-weight: 400;
+    color: #585757;
+    display: block;
+    text-align: left; }
+  .career .nit-form-box [type="submit"] {
+    padding: 10px 35px; }
+  .career .nit-form-box .nit-file-box {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 1.5em; }
+    .career .nit-form-box .nit-file-box [type="file"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      opacity: 0; }
+    .career .nit-form-box .nit-file-box .tbtn.blue {
+      background: #1d3557;
+      font-size: 13px;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 12px;
+      display: inline-block;
+      padding: 10px 20px;
+      position: relative;
+      overflow: hidden; }
+      .career .nit-form-box .nit-file-box .tbtn.blue:hover {
+        -webkit-box-shadow: 0 0 20px #3764a4;
+                box-shadow: 0 0 20px #3764a4; }
+    .career .nit-form-box .nit-file-box p {
+      font-size: 12.4px;
+      font-weight: 400;
+      color: #a9a9a9;
+      margin-bottom: 0; }
+
+#myModal .modal-dialog {
+  max-width: 60%; }
+  #myModal .modal-dialog .modal-content .modal-body {
+    padding: 2.5em;
+    background: #004400; }
+    #myModal .modal-dialog .modal-content .modal-body .close {
+      outline: none;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      -webkit-box-shadow: 0 0 20px #fff;
+              box-shadow: 0 0 20px #fff;
+      padding-top: 2px;
+      background: #fff; }
+    #myModal .modal-dialog .modal-content .modal-body .nit-title {
+      text-align: center;
+      margin-bottom: 1.5em;
+      color: #fff; }
+    #myModal .modal-dialog .modal-content .modal-body .nit-box .nit-img-box {
+      margin-right: 1.2em;
+      float: left; }
+      #myModal .modal-dialog .modal-content .modal-body .nit-box .nit-img-box:hover {
+        -webkit-box-shadow: 0 0 20px #fff;
+                box-shadow: 0 0 20px #fff; }
+    #myModal .modal-dialog .modal-content .modal-body .nit-box p {
+      color: #fff; }
+
+.table-responsive tr,
+.table-responsive th,
+.table-responsive td {
+  border: 1px solid #ccc;
+  padding: 5px 7px;
+  font-size: 13.5px;
+  color: #000; }
+
+.nit-nav .res-btn:hover {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  border-color: #32a2ba;
+  background-color: white;
+  -webkit-box-shadow: 0 0 9px 0px #31a0b8;
+          box-shadow: 0 0 9px 0px #31a0b8; }
+
+.nit-nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.res-btn:focus {
+  cursor: not-allowed; }
+.res-btn:hover {
+  color: #004400;
+  border-color: #004400;
+  background-color: white;
+  -webkit-box-shadow: 0 0 20px #004700;
+          box-shadow: 0 0 20px #004700; }
+
+/* RESPONSIVE */
+@media screen and (max-width: 767px) {
+  .feedback-slider-item:after {
+    left: 30px;
+    right: 30px; }
+
+  .hidden-xs {
+    display: none !important; } }
+.nit-upper-info .textwidget.custom-html-widget {
+  height: 100%; }
+
+@-webkit-keyframes jiggle {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes jiggle {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+@-webkit-keyframes neonBlue {
+  0% {
+    -webkit-box-shadow: 0 0 10px #fff, 0 0 20px #00aa00, 0 0 30px #00aa00, 0 0 40px #00aa00, 0 0 70px #00aa00, 0 0 80px #00aa00, 0 0 100px #00aa00, 0 0 150px #00aa00;
+            box-shadow: 0 0 10px #fff, 0 0 20px #00aa00, 0 0 30px #00aa00, 0 0 40px #00aa00, 0 0 70px #00aa00, 0 0 80px #00aa00, 0 0 100px #00aa00, 0 0 150px #00aa00; }
+  50% {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00aa00, 0 0 35px #00aa00, 0 0 40px #00aa00, 0 0 50px #00aa00, 0 0 75px #00aa00;
+            box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00aa00, 0 0 35px #00aa00, 0 0 40px #00aa00, 0 0 50px #00aa00, 0 0 75px #00aa00; }
+  100% {
+    -webkit-box-shadow: 0 0 10px #fff, 0 0 20px #00aa00, 0 0 30px #00aa00, 0 0 40px #00aa00, 0 0 70px #00aa00, 0 0 80px #00aa00, 0 0 100px #00aa00, 0 0 150px #00aa00;
+            box-shadow: 0 0 10px #fff, 0 0 20px #00aa00, 0 0 30px #00aa00, 0 0 40px #00aa00, 0 0 70px #00aa00, 0 0 80px #00aa00, 0 0 100px #00aa00, 0 0 150px #00aa00; } }
+@keyframes neonBlue {
+  0% {
+    -webkit-box-shadow: 0 0 10px #fff, 0 0 20px #00aa00, 0 0 30px #00aa00, 0 0 40px #00aa00, 0 0 70px #00aa00, 0 0 80px #00aa00, 0 0 100px #00aa00, 0 0 150px #00aa00;
+            box-shadow: 0 0 10px #fff, 0 0 20px #00aa00, 0 0 30px #00aa00, 0 0 40px #00aa00, 0 0 70px #00aa00, 0 0 80px #00aa00, 0 0 100px #00aa00, 0 0 150px #00aa00; }
+  50% {
+    -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00aa00, 0 0 35px #00aa00, 0 0 40px #00aa00, 0 0 50px #00aa00, 0 0 75px #00aa00;
+            box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00aa00, 0 0 35px #00aa00, 0 0 40px #00aa00, 0 0 50px #00aa00, 0 0 75px #00aa00; }
+  100% {
+    -webkit-box-shadow: 0 0 10px #fff, 0 0 20px #00aa00, 0 0 30px #00aa00, 0 0 40px #00aa00, 0 0 70px #00aa00, 0 0 80px #00aa00, 0 0 100px #00aa00, 0 0 150px #00aa00;
+            box-shadow: 0 0 10px #fff, 0 0 20px #00aa00, 0 0 30px #00aa00, 0 0 40px #00aa00, 0 0 70px #00aa00, 0 0 80px #00aa00, 0 0 100px #00aa00, 0 0 150px #00aa00; } }
+@-webkit-keyframes neonBlueFocus {
+  0% {
+    background-color: #a0d9e5; }
+  25% {
+    background-color: #32a2ba; }
+  50% {
+    background-color: #123941; }
+  75% {
+    background-color: #32a2ba; }
+  100% {
+    background-color: #a0d9e5; } }
+@keyframes neonBlueFocus {
+  0% {
+    background-color: #a0d9e5; }
+  25% {
+    background-color: #32a2ba; }
+  50% {
+    background-color: #123941; }
+  75% {
+    background-color: #32a2ba; }
+  100% {
+    background-color: #a0d9e5; } }
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+.nit-services .item .img-box {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+
+.nit-services .item .img-box {
+  width: intrinsic; }
+
+.nit-services .item .img-box {
+  width: -webkit-max-content; }
+
+/*
+* only firefox
+*/
+@-moz-document url-prefix() {
+  .nit-services .item .img-box {
+    width: -moz-fit-content;
+    width: fit-content; } }
+/*
+* only safari
+
+@media not all and (min-resolution:.001dpcm) { @media 
+{
+     
+   .nit-services .item .img-box{width: fit-content;}
+}
+}
+*/
+/*
+* only mobile safari
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { @media
+{
+    .nit-services .item .img-box{width: fit-content;}
+ 
+}}
+*/
+/*
+* only MS edge
+
+@supports (-ms-ime-align:auto)
+and (-webkit-text-stroke:initial) {
+  
+ 
+}
+*/
+@media (max-width: 1024px) {
+  .nit-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -85%;
+    z-index: 999;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #2c2c2c;
+    border-left: 1px solid #2c2c2c;
+    -webkit-transition: .6s ease;
+    transition: .6s ease;
+    width: 260px; }
+
+  .nit-close, nav.nit-nav #menu-header-menu li:first-child {
+    display: block;
+    text-align: right; }
+
+  .nit-close a {
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 0px 15px;
+    border: 2px solid #dddd;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    border-radius: 5px;
+    padding: 5px 10px; }
+
+  .navbar-toggler {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: block;
+    margin: 10px; }
+
+  header nav li {
+    width: 100%; }
+
+  .nit-navbar li a {
+    color: white; }
+
+  .nit-navbar li.active, .nit-navbar li.current_page_item {
+    background-color: #fff; }
+
+  .blog-detail .blog-services-box .nit-sd-title {
+    padding-top: 0; }
+
+  .about .nit-grid-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .about .nit-grid-2 .nit-box:first-child {
+    width: 100%; }
+
+  .nit-ASSISTANCE .nit-grid-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .nit-ASSISTANCE .nit-grid-4 .nit-box {
+    width: 100%; }
+
+  .nit-services.services .nit-grid-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .nit-services.services .nit-grid-3 .item {
+    width: 45%;
+    margin: 1em;
+    margin-top: 5em; }
+
+  .reviews .nit-grid-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .reviews .nit-grid-2 > div.nit-box {
+      width: 47%;
+      margin: auto;
+      margin-bottom: 1.5em;
+      margin-top: 0; }
+      .reviews .nit-grid-2 > div.nit-box:last-child {
+        margin-left: 0; }
+      .reviews .nit-grid-2 > div.nit-box .img-box {
+        width: 20%; }
+      .reviews .nit-grid-2 > div.nit-box .nit-reviews-content {
+        width: 80%; } }
+@media (max-width: 768px) {
+  .nit-contact .nit-contact-box .nit-flex .nit-brand-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .nit-contact .nit-contact-box .nit-flex .nit-brand-box .img-box {
+      padding: 0 !important;
+      width: 45%; }
+
+  .nit-contact .nit-contact-box .nit-flex .nit-con-form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+
+  .nit-database-user-table .nit-database-user-table-box .nit-form-table ::-webkit-input-placeholder {
+    font-size: 16px; }
+
+  .nit-database-user-table .nit-database-user-table-box .nit-form-table :-ms-input-placeholder {
+    font-size: 16px; }
+
+  .nit-database-user-table .nit-database-user-table-box .nit-form-table ::-ms-input-placeholder {
+    font-size: 16px; }
+
+  .nit-database-user-table .nit-database-user-table-box .nit-form-table ::placeholder {
+    font-size: 16px; }
+
+  .nit-header-menu .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+  .nit-products .nit-products-box .nit-heading {
+    font-size: 28px; }
+
+  .nit-products .nit-products-box .nit-flex .nit-box {
+    margin-bottom: 2em;
+    width: 100%; }
+
+  .nit-heading {
+    font-size: 32px;
+    margin-bottom: 25px; }
+
+  .nit-application-area .nit-application-area-box .nit-flex .nit-box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    .nit-application-area .nit-application-area-box .nit-flex .nit-box img {
+      width: 100%; }
+
+  .nit-services .nit-services-box .nit-heading-box p {
+    font-size: 18px; }
+
+  .nit-services .nit-services-box .nit-flex .nit-img-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    margin: auto;
+    margin-bottom: 1em; }
+
+  .nit-figures .nit-figures-box .nit-fig-options-box .nit-arrow-box {
+    margin-bottom: 4.2em; }
+    .nit-figures .nit-figures-box .nit-fig-options-box .nit-arrow-box img {
+      width: 50%; }
+
+  .nit-figures .nit-figures-box .nit-fig-options-box .nit-box-right .nit-title {
+    font-size: 14px; }
+
+  .nit-mue .nit-mue-box p {
+    font-size: 18px; }
+
+  .nit-benefits .nit-benefits-box .nit-flex .nit-box {
+    width: 49%; }
+    .nit-benefits .nit-benefits-box .nit-flex .nit-box .nit-img-box {
+      padding: 1em; }
+
+  .nit-benefits .nit-benefits-box .nit-flex .nit-box .nit-title-box .nit-title {
+    font-size: 18px; }
+
+  .nit-feedstock .nit-feedstock-box .nit-heading {
+    font-size: 27px; }
+
+  .nit-feedstock .nit-feedstock-box .nit-list-box ul li {
+    font-size: 27px; }
+
+  .nit-feedstock .nit-feedstock-box .item .img-box img {
+    height: 250px; }
+
+  .nit-figures .nit-figures-box .nit-fig-options-box .nit-box-left {
+    width: 50%;
+    height: 215px; }
+
+  .nit-figures .nit-figures-box .nit-fig-options-box .nit-box-left .nit-title {
+    font-size: 16px; }
+
+  .nit-figures {
+    padding: 35px 0; }
+
+  .nit-services .nit-services-box .nit-flex .nit-content-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-top: 1.5em; }
+
+  .nit-co2-responsible-farming .nit-flex .nit-organic-box .nit-content-box:first-child {
+    padding-right: 1em; }
+
+  .nit-co2-responsible-farming .nit-flex .nit-organic-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-top: 2em; }
+    .nit-co2-responsible-farming .nit-flex .nit-organic-box .nit-content-box .nit-title {
+      font-size: 24px; }
+
+  .nit-co2-responsible-farming .nit-flex .nit-farming-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding-right: 0; }
+    .nit-co2-responsible-farming .nit-flex .nit-farming-box .nit-img-box img {
+      width: 50%; }
+
+  .nit-abt .nit-abt-box .nit-flex .nit-box {
+    width: 100%;
+    padding: 20px; }
+
+  .nit-landing-images .nit-landing-images-box .nit-img-box .nit-img {
+    width: 90%; }
+
+  .nit-contact .nit-contact-box .nit-flex .nit-brand-box .img-box {
+    margin-top: 1em; }
+
+  .nit-blog .nit-blog-box .nit-flex .nit-box {
+    width: 100% !important; }
+
+  .nit-co2-section .nit-in-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .nit-co2-section .nit-in-flex .nit-img-box {
+      padding: 2em; }
+    .nit-co2-section .nit-in-flex .nit-box {
+      width: 100%; }
+      .nit-co2-section .nit-in-flex .nit-box p {
+        font-size: 20px; }
+
+  .nit-co2-section .nit-flex .nit-box {
+    width: 100%; }
+
+  .nit-co2-section .nit-flex .nit-box p {
+    font-size: 18px; }
+    .nit-co2-section .nit-flex .nit-box p br {
+      display: none; }
+  .nit-co2-section .nit-flex .nit-box .nit-title {
+    font-size: 22px; }
+    .nit-co2-section .nit-flex .nit-box .nit-title br {
+      display: none; }
+
+  .nit-abt {
+    padding-bottom: 35px; }
+
+  .nit-header-menu .nit-navigation {
+    display: none; }
+
+  .about .nit-grid-2 {
+    display: block; }
+
+  .slider-carousel .item-content .content-box h5 {
+    font-size: 30px; }
+
+  .slider-carousel .item-content .content-box .res-btn {
+    ing: 10px 20px;
+    font-size: 14px; }
+
+  .nit-grid {
+    grid-gap: 20px; }
+
+  .nit-abt .nit-abt-main-head {
+    font-size: 17px; }
+
+  .nit-abt .nit-abt-sub-head {
+    font-size: 16px; }
+
+  .nit-abt::after {
+    right: auto;
+    left: 0; }
+
+  footer .nit-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  footer .nit-flex .item {
+    width: 100% !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin: 1rem 0; }
+
+  footer .nit-flex .item:nth-child(1) {
+    padding-left: 30px; }
+
+  footer .nit-footer-nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .nit-row.nit-row-line > .form-group {
+    width: 40%; }
+
+  .nit-row.nit-row-line.w-28 > .form-group {
+    width: 50%; }
+
+  .nit-blog .container .item .nit-flex .nit-box h6 {
+    font-size: 20px; }
+
+  .nit-blog .container .item .nit-flex .nit-box p {
+    font-size: 15px; }
+
+  .nit-blog .container .item .nit-flex .nit-box:last-child {
+    -ms-flex-item-align: center;
+        align-self: center; }
+
+  .blog-detail-box img {
+    width: 100%; }
+
+  .nit-title {
+    font-size: 30px; }
+
+  footer .nit-flex .nit-box {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px dashed #ddd; }
+
+  footer .nit-flex .nit-box:first-child {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+
+  footer .nit-flex ul li {
+    padding-left: 5%; }
+
+  footer .nit-flex ul li::before {
+    left: -2%;
+    top: -1px; }
+
+  .about h1 {
+    font-size: 30px;
+    width: 100%; }
+
+  .about .nit-grid-2 {
+    display: block; }
+    .about .nit-grid-2 .nit-box:first-child {
+      float: left;
+      padding-right: 1.5em; }
+      .about .nit-grid-2 .nit-box:first-child .img-box {
+        margin: 0; }
+
+  .about p {
+    margin-left: 0;
+    width: 100%; }
+
+  .nit-services.services .nit-grid-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .nit-services.services .nit-grid-3 .item {
+    width: 45%;
+    margin: 1em;
+    margin-top: 5em; }
+
+  .nit-contact .row .col-md-7, .nit-contact .row .col-md-5 {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 2em; }
+
+  .reviews .nit-box .nit-card .img-box {
+    width: 50%;
+    border-radius: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-right: 25px; }
+
+  .reviews .nit-box .nit-card .nit-reviews-content {
+    width: 180%; }
+
+  .reviews .nit-box .nit-card .img-box img {
+    width: 86px;
+    height: 86px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-width: 150%;
+    padding-right: 25px; }
+
+  footer .nit-flex .nit-box:last-child ul li {
+    padding-left: 2.5%; } }
+@media (max-width: 425px) {
+  br {
+    display: none; }
+
+  .nit-services .nit-services-box .nit-flex .nit-img-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+    .nit-services .nit-services-box .nit-flex .nit-img-box .img-box:hover img {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95); }
+
+  .nit-services .nit-services-box .nit-flex .nit-content-box ul li {
+    font-size: 16px; }
+
+  .nit-blog-detail {
+    padding: 30px 0; }
+
+  .nit-feedstock .nit-feedstock-box .nit-list-box ul li {
+    font-size: 18px; }
+
+  .nit-blog-detail .nit-heading-box .nit-heading {
+    font-size: 30px; }
+
+  .nit-blog-detail .nit-content-box .nit-title {
+    font-size: 22px; }
+
+  .nit-co2-responsible-farming .nit-flex .nit-farming-box .nit-img-box .img-box {
+    padding: 1em;
+    text-align: center; }
+
+  header .side-menu {
+    width: 70%; }
+
+  .nit-slider .item .item-content .content-box .recycle-leaves {
+    width: 20%; }
+
+  .nit-figures .nit-figures-box .nit-fig-options-box .nit-arrow-box img {
+    width: 50%;
+    -webkit-transform: rotate(90deg) translate(20%, -70%) scale(0.7);
+            transform: rotate(90deg) translate(20%, -70%) scale(0.7); }
+
+  .nit-products {
+    padding: 35px 0; }
+
+  .nit-blog .nit-blog-box .nit-flex .nit-box .nit-content .nit-title {
+    font-size: 20px; }
+
+  .nit-blog .nit-blog-box .nit-flex .nit-box .nit-content p {
+    font-size: 16px; }
+
+  .nit-figures .nit-figures-box .nit-fig-options-box .nit-box-right mg {
+    width: 70%;
+    margin-top: 1em; }
+
+  .nit-slider .item .item-content .content-box .nit-banner-title {
+    font-size: 30px; }
+
+  .nit-slider .item .item-content .content-box .nit-banner-subtitle, .nit-abt .nit-abt-box .nit-flex .nit-box p {
+    font-size: 14px; }
+
+  .nit-slider .item .item-content .content-box .nit-down-arrow, .nit-abt .nit-abt-box .nit-flex .nit-box .nit-down-arrow {
+    font-size: 14px;
+    padding: 7px 10px; }
+
+  .nit-slider .item > img {
+    height: 500px; }
+
+  .nit-application-area .nit-application-area-box .nit-flex .nit-box .nit-content .nit-title {
+    font-size: 20px;
+    height: auto;
+    min-height: auto; }
+
+  .nit-figures .nit-figures-box .nit-fig-options-box .nit-box-left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    width: auto;
+    padding: 0; }
+
+  .nit-figures .nit-figures-box .nit-fig-options-box {
+    background: #004400 !important;
+    display: block; }
+
+  .nit-benefits .nit-benefits-box .nit-flex .nit-box {
+    width: 100%; }
+
+  .nit-database-user-table .nit-database-user-table-box .nit-form-table .nit-filter-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .nit-database-user-table .nit-database-user-table-box .nit-form-table .nit-filter-box .nit-input-box {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1em; }
+
+  .nit-contact .nit-contact-box .nit-flex .nit-brand-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-address-box ul {
+    display: block; }
+
+  .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-address-box ul li a {
+    margin-bottom: 1em;
+    margin-top: 0; }
+
+  .nit-contact .nit-contact-box .nit-flex .nit-con-form .nit-form-box .nit-group {
+    width: 100%;
+    margin-right: 1em; }
+
+  .nit-contact .nit-contact-box .nit-flex .nit-con-form {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .nit-slider .item .item-content .content-box {
+    margin-top: 5em;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .nit-mission-goal .nit-mission-goal-box .nit-flex .nit-box {
+    width: 100%;
+    margin-bottom: 2em; }
+    .nit-mission-goal .nit-mission-goal-box .nit-flex .nit-box p {
+      font-size: 18px; }
+      .nit-mission-goal .nit-mission-goal-box .nit-flex .nit-box p br {
+        display: none; }
+
+  .nit-mission-goal {
+    padding-bottom: 30px; }
+
+  .nit-heading {
+    font-size: 24px; }
+
+  header .side-menu .inner-wrapper nav ul li a, .nit-abt .nit-abt-box .nit-flex .nit-box .nit-title {
+    font-size: 18px; }
+
+  footer .nit-flex .nit-box:last-child ul li {
+    padding-left: 4%; }
+
+  .nit-privacypolicy .nit-privacypolicy-box {
+    padding-left: 1.5em; }
+
+  .nit-services.services .nit-grid-3 .item {
+    width: 100% !important; }
+
+  .slider-carousel .item-content .content-box h5 {
+    font-size: 17px; }
+
+  .slider-carousel .item-content .content-box .res-btn {
+    font-size: 10px;
+    padding: 10px; }
+
+  .nit-grid, .about .nit-grid-2:first-child {
+    display: block; }
+
+  .about .nit-grid-2 .nit-box:first-child .img-box {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1em; }
+
+  .nit-abt .nit-abt-main-head {
+    margin-top: 10px; }
+
+  .about h6 {
+    margin: 0;
+    width: 100%; }
+
+  .nit-abt::after {
+    display: block;
+    position: relative;
+    top: 0; }
+
+  .nit-testimonials-videos .nit-grid .nit-grid-box {
+    margin-bottom: 1.5rem; }
+
+  .nit-row {
+    display: block; }
+
+  .nit-out-team .nit-row .nit-box {
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    padding: 15px; }
+
+  .nit-contact .nit-grid .item {
+    margin-bottom: 1rem; }
+
+  .nit-banner .nit-banner-content-box .container h2 {
+    font-size: 24px; }
+
+  .nit-banner .nit-banner-content-box .container ul li a {
+    font-size: 12px; }
+
+  .nit-banner .nit-banner-content-box .container ul {
+    padding: 5px 15px; }
+
+  .nit-uppernav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+  .slider-carousel .item-content .content-box h2 {
+    font-size: 30px; }
+
+  .nit-abt h1 {
+    font-size: 20px; }
+
+  .nit-blog .container .item .nit-flex .nit-box h6, .nit-job-board .nit-job-board-container .nit-job-board-box .nit-box .nit-jb-address address {
+    font-size: 14px; }
+
+  .nit-blog .container .item .nit-flex .nit-box p {
+    font-size: 12px; }
+
+  .nit-blog .container .item .nit-flex .nit-box .img-box img {
+    height: auto; }
+
+  .nit-ASSISTANCE .nit-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .nit-ASSISTANCE .nit-grid-4 .nit-box {
+    width: 50%; }
+
+  .about h1 {
+    font-size: 20px; }
+
+  .nit-services.services .nit-grid-3 {
+    grid-template-columns: repeat(1, 1fr); }
+
+  .nit-job-board .nit-job-board-container .nit-job-board-search-box .nit-flex {
+    display: block; }
+
+  .nit-job-board .nit-job-board-container .nit-job-board-categories .nit-job-board-categories-job-types {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .nit-job-board .nit-job-board-container .nit-job-board-categories .nit-job-board-categories-job-types li {
+      margin: 2px; }
+
+  .nit-job-board .nit-job-board-container .nit-job-board-categories .nit-job-board-categories-c ul li, .nit-job-board .nit-job-board-container .nit-job-board-box .nit-box {
+    display: block; }
+
+  .nit-job-board .nit-job-board-container .nit-job-board-box .nit-box .img-box {
+    float: left; }
+
+  .nit-job-board .nit-job-board-container .nit-job-board-box .nit-box .nit-jb-address i {
+    margin: 0; }
+
+  .nit-job-board .nit-job-board-container .nit-job-board-box .nit-box .nit-jb-address {
+    margin-top: 3em; }
+
+  .nit-job-board .nit-job-board-container .nit-job-board-box .nit-box:first-child .nit-jb-address {
+    margin-top: 2em; }
+
+  .nit-grid-2 {
+    grid-template-columns: repeat(1, 1fr); }
+
+  .blog-detail .img-box {
+    float: none;
+    width: 100%; }
+
+  .blog-detail .nit-sd-title {
+    padding: 0; }
+
+  .blog-detail {
+    padding: 2em 0; }
+
+  .blog-detail .nit-bd-title {
+    font-size: 18px; }
+
+  .blog-detail .img-box {
+    margin-right: 1em;
+    margin-bottom: 10px; }
+
+  .nit-contact .col-md-5 {
+    padding-left: 15px;
+    margin-bottom: 2em; }
+
+  .nit-contact .col-md-7 {
+    padding-right: 15px; }
+
+  .reviews .nit-box .nit-card .img-box {
+    width: 50%; }
+
+  -o-object-fit: contain;
+
+     object-fit: contain;
+  .reviews .nit-box .nit-card .img-box img {
+    width: 70px;
+    height: 70px; }
+
+  .reviews .nit-grid-2 > div.nit-box {
+    width: 100%; } }
+@media (max-width: 375px) {
+  .contact .nit-flex .nit-flex-box {
+    width: 100%; }
+
+  .slider-carousel .item-content .content-box .res-btn {
+    font-size: 8px;
+    padding: 6px; }
+
+  .about .nit-grid-2 .nit-box:first-child {
+    width: 100%;
+    float: none; }
+
+  .blog-detail .nit-sd-title {
+    font-size: 28px; } }
+@media (max-width: 360px) {
+  .nit-services .nit-services-box .nit-flex .nit-content-box ul li {
+    font-size: 14px; }
+
+  .nit-footer-bottom .nit-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .nit-footer-bottom .social-icon-box {
+    padding-bottom: .8em; } }
+@media (max-width: 350px) {
+  .nit-services .nit-services-box .nit-flex .nit-content-box ul li {
+    font-size: 13px; }
+
+  .nit-uppernav .logo img {
+    width: 70%; }
+
+  .slider-carousel .owl-dots {
+    bottom: -5%; }
+
+  .nit-uppernav .nit-upper-info ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .nit-uppernav .nit-upper-social li a, .slider-carousel .item-content .content-box h2, .nit-title {
+    font-size: 20px; }
+
+  .nit-row, .nit-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+/*# sourceMappingURL=style.css.map */

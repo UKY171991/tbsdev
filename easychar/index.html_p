@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Holding company running different projects">
+<meta name="keywords" content="Sky East UK Ltd was incorporated in December 2013 in London. The company focused on projects connected to healthy life style and environment.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>EasyChar | Organic soil enhancer by affordable price</title>
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/tooltipster.min.css">
+<link rel="stylesheet" href="css/cubeportfolio.min.css">
+<link rel="stylesheet" href="css/revolution/navigation.css">
+<link rel="stylesheet" href="css/revolution/settings.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://www.google.com/recaptcha/api.js?render=6LdIH-IUAAAAABdUSl1EVBQ_HCSotDaXdtT-Bf9e"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="75" class="offset-nav">
+<!--PreLoader-->
+<div class="loader">
+    <div class="loader-inner">
+        <div class="cssload-loader"></div>
+    </div>
+</div>
+<!--PreLoader Ends-->
+<!-- header -->
+<header class="site-header" id="header">
+    <nav class="navbar navbar-expand-lg transparent-bg static-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" class="logo-default">
+                <img src="images/logo.png" alt="logo" class="logo-scrolled">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto ml-xl-0 mr-xl-0">
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll scrollupto" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#production">Production</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#application">Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#waste-recycling-service">Waste recycling service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#co2-responsible-farming">CO2 responsible farming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#contact">Contacts</a>
+                    </li>
+                <!--    <li class="nav-item nav-item-waste">
+                        <a class="nav-link pagescroll" href="#waste-recycling-service">Waste recycling service</a>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+        <!--side menu open button-->
+        <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
+            <span></span> <span></span> <span></span>
+        </a>
+    </nav>
+    <!-- side menu -->
+    <div class="side-menu opacity-0 gradient-bg">
+        <div class="overlay"></div>
+        <div class="inner-wrapper">
+            <span class="btn-close btn-close-no-padding" id="btn_sideNavClose"><i></i><i></i></span>
+            <nav class="side-nav w-100">
+                <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link pagescroll scrollupto" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#production">Production</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#application">Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#waste-recycling-service">Waste recycling service</a>
+                    </li>                    <li class="nav-item">                        <a class="nav-link" href="scotland.html">Organic waste recycling Scotland</a>                    </li>                    <li class="nav-item">                        <a class="nav-link" href="europe.html">Organic waste recycling Europe</a>                    </li>                    <li class="nav-item">                        <a class="nav-link" href="distilleries.html">Distilleries waste recycling</a>                    </li>							
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#co2-responsible-farming">CO2 responsible farming</a>
+                    </li>                    <li class="nav-item">                        <a class="nav-link" href="eco-friendly.html">Eco-friendly waste reprocessing</a>                    </li>					                    <li class="nav-item">                        <a class="nav-link" href="environment-friendly.html">Environmentally friendly waste reprocessing</a>                    </li>					                    <li class="nav-item">                        <a class="nav-link pagescroll" href="#contact">Contacts</a>                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="close_side_menu" class="tooltip"></div>
+    <!-- End side menu -->
+</header>
+<!-- header -->
+<!--Main Slider-->
+<section id="home" class="p-0 single-slide light-slider">
+    <h2 class="d-none">hidden</h2>
+    <div id="rev_single_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="trax_slider_01">
+        <!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
+        <div id="rev_single" class="rev_slider fullwidthabanner" data-version="5.4.8.1">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-index="rs-3" data-transition="crossfade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="images/banner_hdr.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/banner_hdr.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="on" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+                    <div class="tp-caption   tp-resizeme"
+                    data-x="['right','right','right','center']" data-hoffset="['-120','-100','-50','0']"
+                    data-y="['center','center','center','bottom']" data-voffset="['0','0','0','-50']"
+                    data-type="image"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay": 500, "speed": 300, "from": "opacity: 0", "to": "opacity: 1"},
+                   {"delay": "wait", "speed": 300, "to": "opacity: 0"}]'
+                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                    data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    style="z-index: 6;"><img src="images/hdr_rht_img.png" alt="" data-ww="['900px','650px','550px','400px']" data-hh="['900px','650px','550px','400px']" data-no-retina> </div>
+                </li>
+            </ul>
+        </div>
+        <!-- END REVOLUTION SLIDER -->
+    </div>
+    <!--scroll down-->
+</section>
+<!--Main Slider ends -->
+<!--Some Feature --><section class="content padding mt-2 mb-2">    <div class="container">      <div class="row d-flex align-items-top" id="app-feature">         <div class="col-lg-6 col-md-6 col-sm-12 borrht">            <div class="text-center text-md-left">               <div class="feature-item mt-3 wow fadeInLeft" data-wow-delay="300ms">                  <div class="text">                     <h3 class="bottom15">                        <span class="d-inline-block font-medium">Our Mission</span>                     </h3>                     <p>is to make practical application of environmentally beneficial technologies economically viable and affordable for mass usage.</p>                  </div>               </div>            </div>         </div>         <div class="col-lg-6 col-md-6 col-sm-12">            <div class="text-center text-md-left">               <div class="feature-item mt-3 wow fadeInRight" data-wow-delay="300ms">                  <div class="text">                     <h3 class="bottom15">                        <span class="d-inline-block  font-medium">Our goal</span>                     </h3>                     <p>is to involve the maximum number of farms and businesses to convert their organic waste to Easychar.</p>                  </div>               </div>            </div>         </div>      </div>			  <figure class="w-100 mt-4"><img class="w-100" src="images/goal.jpg" alt="goal"></figure>    </div></section><!--About -->
+<section id="about" class="single-feature padding">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <h2 class="darkcolor font-bold bottom30 w-100 text-center">What is so special about <span class="defaultcolor">EasyChar</span>? </h2>
+            <div class="col-lg-5 offset-lg-1 borrht col-md-6 col-sm-12 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
+                <div class="what_cont">
+                <h3 class="bottom35">
+                    <span class="d-inline-block font-bold"><a href="https://skyeast.co.uk/" target="_blank"> Sky East UK </a> has a production technology of unique product that called Pure Element. </span>
+                </h3>
+                <p>Easychar is a key ingredient for all products supplied under our trademark.</p>				<p>Easychar belongs to biochar family.</p>
+                <a href="http://randd.defra.gov.uk/Default.aspx?Menu=Menu&Modul" target="_blank" class=" readmlnk  mb-sm-0 mb-4"><i class="fa fa-long-arrow-alt-right fa-lg"></i> Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-5  col-md-6 col-sm-12 text-sm-left text-center wow fadeInRight" data-wow-delay="300ms">
+                <div class="what_cont">
+					<div class="heading-title mb-4"></div>
+					<h3 class="bottom35">
+						<span class="d-inline-block font-bold">This technology significantly reduces costs of Pure Element production.</span>					</h3>
+					<p class="bottom35">Our company has exclusive rights to produce and distribute the product and looking for long term cooperation with customers.</p>
+					<a href="https://www.biochar.ac.uk/what_is_biochar.php" target="_blank" class=" readmlnk  mb-sm-0 mb-4"><i class="fa fa-long-arrow-alt-right fa-lg"></i> Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--About ends -->
+<!--Some Feature ends-->
+<!-- WOrk Process-->
+<section id="our-process" class="padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center wow fadeInRight" data-wow-delay="300ms">
+			    <div class="image"> 
+				   <img alt="SEO" src="images/Top line Photos 6.jpg">
+				</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--WOrk Process ends-->
+<!-- Mobile Apps -->
+<section id="production" class="padding">   <div class="container">      <div class="row align-items-center">         <div class="col-lg-12 col-md-12 col-sm-12">            <div class="heading-title bottom30 wow fadeInUp" data-wow-delay="300ms">               <h2 class="darkcolor font-bold text-center text-md-center">Why our production costs are lower than for other biochar-like products?               </h2>            </div>         </div>      </div>      <div class="row d-flex align-items-top" id="app-feature">         <div class="col-lg-4 col-md-4 col-sm-12 borrht">            <div class="text-center text-md-left">               <div class="feature-item mt-3 wow fadeInLeft" data-wow-delay="300ms">                  <div class="text">                     <h3 class="bottom15">                        <span class="d-inline-block font-medium">Waste</span>                     </h3>                     <p>Our product is produced from waste of different food production businesses. </p>                     <p> These raw materials are easy available and in majority of cases does not cost much. </p>                  </div>               </div>            </div>         </div>         <div class="col-lg-4 col-md-4 col-sm-12 borrht">            <div class="text-center text-md-left">               <div class="feature-item mt-3 wow fadeInUp" data-wow-delay="300ms">                  <div class="text">                     <h3 class="bottom15">                        <span class="d-inline-block  font-medium">Equipment</span>                     </h3>                     <p>We use specially designed equipment, which allows us to minimise necessary costs in many ways.                     </p>                  </div>               </div>            </div>         </div>         <div class="col-lg-4 col-md-4 col-sm-12">            <div class="text-center text-md-left">               <div class="feature-item mt-3 wow fadeInRight" data-wow-delay="300ms">                  <div class="text">                     <h3  class="bottom15">                        <span class="d-inline-block  font-medium">Technology </span>                     </h3>                     <p>These two factors allowed us to develop unique technology and arrange supply chain in an optimal way tofurther minimise logistics costs                     </p>                  </div>               </div>            </div>         </div>      </div>	  <figure class="w-100 mt-5"><img class="w-100" src="images/production.jpg" alt="production"></figure>   </div></section>
+<!--Mobile Apps ends--><!-- Application -->
+<section id="application" class="padding bglight">   <div class="container">	   <div class="col-md-12 text-center heading_space wow fadeIn" data-wow-delay="300ms">		  <h2 class="heading bottom30 "><span class="font-bold">Possible areas of Application</span>			 <span class="divider-center"></span>		  </h2>		  <div id="services-measonry2" class="cbp">			 <div class="cbp-item digital brand design borrht">				<div class="services-main">				   <div class="services-content brand text-center text-md-left">					  <h3 class="bottom10 darkcolor font-bold"><a href="javascript:clickevent(1);">Agricultural purposes.</a></h3>					  <h3 class="bottom10 darkcolor"><a href="javascript:clickevent(1);">Click</a></h3>					  <p class="bottom15 enbtext" id="clk1">Mixed with soil or any other fertile medium reduces required quantity of fertilisers and extends soil’s fertility. <br/><br/>						 We observed cases when the same growing medium stayed fertile over 2-3 years without additional fertilisation. <br/><br/>						 We are happy to cooperate and test the material for applications at vertical farming and other smart agro-technologies.					  </p>				   </div>				   <div class="image bottom10">					  <div class="image"><img alt="Agricultural" src="images/abtimg3.jpg"></div>				   </div>				</div>			 </div>			 <div class="cbp-item digital graphics ">				<div class="services-main">				   <div class="services-content text-center text-md-left">					  <h3 class="bottom10 darkcolor  font-bold"><a href="javascript:clickevent(2);">Home gardening.</a></h3>					  <h3 class="bottom10 darkcolor"><a href="javascript:clickevent(2);">Click</a></h3>					  <p class="bottom15 enbtext" id="clk2"> Mixed with compost EasyChar brings a long list of benefits for the end users. Composts work longer and better labour costs.					  </p>				   </div>				   <div class="image bottom10">					  <div class="image"><img alt="Home gardening" src="images/home-gardening.jpg"></div>				   </div>				</div>			 </div>			 <div class="cbp-item digital brand design borrht">				<div class="services-main">				   <div class="services-content brand text-center text-md-left">					  <h3 class="bottom10 darkcolor font-bold"><a href="javascript:clickevent(4);">To improve properties of other organic fertiliser. </a>					  </h3>					  <h3 class="bottom10 darkcolor"><a href="javascript:clickevent(4);">Click</a></h3>					  <p class="bottom15 enbtext" id="clk4">Mix EasyChar with worm castings or manure based fertilisers to make soil fertile and productive over longer period</p>				   </div>				   <div class="image bottom10">					  <div class="image"><img alt="fertiliser" src="images/worm.jpg"></div>				   </div>				</div>			 </div>			 <div class="cbp-item digital graphics ">				<div class="services-main">				   <div class="services-content services-content-hgt text-center text-md-left">					  <h3 class="bottom10 darkcolor  font-bold"><a href="javascript:clickevent(5);">For green roofs. 						 </a>					  </h3>					  <h3 class="bottom10 darkcolor"><a href="javascript:clickevent(5);">Click</a></h3>					  <p class="bottom15 enbtext" id="clk5">Green roofs and walls are taking root around the world. EasyChar is ideal soil enhancer for growing medium applied at this area! Due to EasyChar natural characteristics it minimises efforts to keep the surfaces green and alive. 					  </p>				   </div>				   <div class="image bottom10">					  <div class="image"><img alt="green roofs" src="images/green-roofs.jpg"></div>				   </div>				</div>			 </div>		  </div>	   </div>	</div></section><!-- Application ends --><!-- Recycling -->
+<section id="waste-recycling-service" class="section gray-bg padding">   <div class="container">      <div class="col-md-12 text-center heading_space wow fadeIn" data-wow-delay="300ms">         <h2 class="heading bottom30 "><span class="font-bold">Waste recycling service</span>            <span class="divider-center"></span>         </h2>         <h3>Our company offers on site waste processing service for distilleries and breweries, wineries, farms and other businesses dealing with organic waste</h3>      </div>      <div class="row waste-section">         <!-- col -->         <div class="col-lg-5 col-md-12 text-center">            <img src="images/easycharimg1.png" title="Waste Recycling" alt="Waste Recycling">         </div>           <div class="col-lg-7 col-md-12">            <ul class="check-list">               <li><i class="fas fa-check"></i> We build a tailor made equipment for you</li>               <li><i class="fas fa-check"></i> As smaller amount of waste you have - as smaller the machines will be</li>               <li><i class="fas fa-check"></i> As the result of the operation you get an environmentally beneficial soil enhancer which you can either sell to local public yourself or leave it for us and we will distribute it further</li>               <li><i class="fas fa-check"></i> There are no any costs for you to install the processing equipment</li>               <li><i class="fas fa-check"></i> We expect to get a service fee from you based on amount of waste you reprocess </li>            </ul>         </div>         <!-- col -->			       </div>   </div><!-- Tab style --></section><!-- Recycling ends --><!-- Counters --><section id="bg-counters" class="padding  parallax">    <div class="container">        <div class="row align-items-center text-center">            <div class="col-lg-12 col-md-12 col-sm-12 bottom10">                <div class="image"><img src="images/iStock-1078612490.jpg" alt="EasyChar"></div>            </div>        </div>    </div></section><!-- Counters ends--><!-- CO2 -->
+<section id="co2-responsible-farming" class="section bglight padding">   <div class="container">      <div class="col-md-12 text-center heading_space wow fadeIn" data-wow-delay="300ms">         <h2 class="heading bottom30"><span class="font-bold">CO2 responsible farming</span>            <span class="divider-center"></span>         </h2>      </div>      <div class="row co2-section">         <!-- col -->         <div class="col-lg-6 col-md-12">            <div class="text text-center padding_top">               <h3>                  As an initiative to reduce greenhouse gasses emission into the atmosphere we have introduced “<span class="font-bold">CO2 responsible farming</span>” label for food and drink producers who recycle their waste into Easychar.               </h3>               <!--<br/>               <p>This section is under construction now.</p>-->            </div>         </div>         <div class="col-lg-6 col-md-12 text-center">            <img src="images/co2responsiblefarming.png" title="CO2 farming" alt="CO2 farming">         </div>		          <!-- col -->      </div>   </div> <!-- Tab style --></section><!-- CO2 --><!--Organic waste--><section id="Organic" class="Organic-waste padding">   <div class="container">	   <div class="Organic-waste-content wow fadeInLeft" data-wow-delay="300ms">	        <h3 class="mt-3 mb-3">Converting organic waste to Easychar is*:</h3>			<ul class="check-list">			   <li class="mb-3"><i class="fas fa-check mr-1"></i> 4 time more effective than biological decomposition (direct land application) / composting</li>			   <li class="mb-3"><i class="fas fa-check mr-1"></i> 25 times more effecting than burning biomass off</li>			   <li class="mb-3"><i class="fas fa-check mr-1"></i> <span class="font-bold underline">irreconcilable</span> with utilising the waste through feeding animals – as animals produce CO2 and methane</li>			</ul>			<h3 class="pt-4 mb-3">Please see following reports attached for details:</h3>			<ul class="check-list">			   <li class="mb-3"><a href="images/overview.pdf" target="_blank"><i class="fas fa-check mr-1"></i> An overview of biochar application for CO2 sequestration, issued by University of East London</a></li>			   <li class="mb-3"><a href="images/biomass-management.pdf" target="_blank"><i class="fas fa-check mr-1"></i> Biomass management, global warming impact and the potential of carbonization, issued by EcoTopic AB</a></li>			   <li class="mb-3"><a href="images/biochar-carbon.pdf" target="_blank"><i class="fas fa-check mr-1"></i> Biochar and carbon sequestration potential, issued by EcoTopic AB</a></li>			</ul>	   </div>    </div> </section><!--Organic waste ends --><!--difference --><section id="difference" class="difference-figures bglight padding">   <div class="container">	    <div class="difference-content pt-2 pb-2">			<div class="col-md-12 text-center wow fadeIn" data-wow-delay="300ms">				<h2 class="heading bottom20"><span class="font-bold">What difference it makes in daily life figures</span>					<span class="divider-center"></span>				</h2>			</div>            <p>According to models designed based on our experiments, practice of converting organic waste to Easychar <span class="d-block">compensates following CO2 emission equivalents:</span></p>		    <div class="row difference-section mt-0 border-0">				<div class="col-md-12">				 <!-- col -->					<div class="row">							<div class="col-lg-3 col-md-6 m-auto">								<div class="difference-left text-center mt-4 wow slideInLeft" data-wow-delay="300ms">									<figure><img src="images/draff1.png" alt="draff1"></figure>									<h4>1T of wet draff, reprocessed to Easychar</h4>								</div>								</div>								<div class="col-lg-3 col-md-6 m-auto">								<div class="difference-mid text-center mt-4 wow slideInUp" data-wow-delay="300ms">									<figure class="ml-5"><img src="images/reduces.jpg" alt="reduces"></figure>								</div>								</div>								<div class="col-lg-3 col-md-6 m-auto">								<div class="difference-ryt1 text-center mt-4 wow slideInRight" data-wow-delay="300ms">								   <figure><img src="images/flight.png" alt="flight"></figure>								   <h4>LHR - AGP</h4>								</div>								</div>								<div class="col-lg-3 col-md-6 m-auto">								<div class="difference-ryt2 text-center mt-4 wow slideInRight" data-wow-delay="300ms">									<h4>148 kg of CO2 - equivalent of CO2 emission passenger / flight London – Malaga *</h4>								</div>								</div>												</div>					<div class="row">							<div class="col-lg-3 col-md-6 m-auto">								<div class="difference-left text-center mt-4 wow slideInLeft" data-wow-delay="300ms">									<figure><img src="images/draff2.png" alt="draff2"></figure>									<h4>32T of wet draff, reprocessed to Easychar</h4>								</div>								</div>								<div class="col-lg-3 col-md-6 m-auto">								<div class="difference-mid text-center mt-4 wow slideInUp" data-wow-delay="300ms">									<figure class="ml-5"><img src="images/reduces.jpg" alt="reduces"></figure>								</div>								</div>								<div class="col-lg-3 col-md-6 m-auto">								<div class="difference-ryt1 text-center mt-4 wow slideInRight" data-wow-delay="300ms">								   <figure><img src="images/car.png" alt="car"></figure>								</div>								</div>							<div class="col-lg-3 col-md-6 m-auto">								<div class="difference-ryt2 text-center mt-4 wow slideInRight" data-wow-delay="300ms">									<h4>4.6 metric tons of CO2 – equivalent of emission Produced by average car a year</h4>								</div>								</div>													</div>										</div>						    <!-- col -->		    </div>	   </div>    </div> 	<ul>		<li class="pt-3 mt-4 border-top text-center"><a href="https://www.icao.int/environmental-protection/CarbonOffset/Pages/default.aspx" target="_blank">*https://www.icao.int/environmental-protection/CarbonOffset/Pages/default.aspx</a></li>	</ul>   </section><!--difference ends --><!--mass-effect --><section id="usage" class="mass-effect padding">   <div class="container">	   <div class="mass-content wow fadeInRight text-center" data-wow-delay="300ms">			<div class="col-md-12 text-center wow fadeIn" data-wow-delay="300ms">				<h2 class="heading bottom25"><span class="font-bold">Mass usage effect</span>					<span class="divider-center"></span>				</h2>			</div>			<p>We strongly believe that using Easychar would eventually help to <span class="font-bold underline">decrease</span> amount of greenhouse gasses in atmosphere and it will be an important step towards saving our planet.</p>			<p>Our technology is not just eco-friendly – it is <span class="font-bold underline">environmentally-recovering.</span></p>			<p>We kindly encourage you to support our initiative and would be happy to develop our cooperation further</p>	   </div>    </div> </section><!--mass-effect ends --><!--benefits --><section id="benefits" class="benefits bglight padding">   <div class="container">	   <div class="benefits-content mt-4 mb-4">			<div class="col-md-12 text-center wow fadeIn" data-wow-delay="300ms">				<h2 class="heading bottom30"><span class="font-bold">Benefits you get converting waste to Easychar</span>					<span class="divider-center"></span>				</h2>			</div>		    <div class="row benefits-section">			 <!-- col -->				<div class="col-lg-4 col-md-6">					<div class="benefits text-center wow slideInLeft" data-wow-delay="300ms">						<figure class="w-100"><img src="images/CO2.png" alt="CO2"></figure>						<h3><span class="font-bold">Your business practically supports <span class="d-block">reduction of CO2 level into</span> atmosphere *</span></h3>					</div>				</div>				<div class="col-lg-4 col-md-6">					<div class="benefits text-center wow slideInUp" data-wow-delay="300ms">						<figure class="w-100"><img src="images/friendly.png" alt="friendly"></figure>						<h3><span class="font-bold">You reduce the amount of fertilizers <span class="d-block">used - practice environmentally friendly</span> farming</span></h3>							   					</div>				</div>								<div class="col-lg-4 col-md-6">					<div class="benefits text-center wow slideInRight" data-wow-delay="300ms">						<figure class="w-100"><img src="images/farming.png" alt="farming"></figure>						<h3><span class="font-bold">Positive message for your customers - <span class="d-block"> an  additional argument to buy your </span>products at stores</span></h3>						   					</div>				</div>	 			<!-- col -->		    </div>	   </div>    </div>    <ul>		<li class="pt-3 mt-4 border-top text-center">*Biochar benefits in this area are well known. Additional information might be found here - <a href="https://www.biochar.ac.uk/what_is_biochar.php" target="_blank">https://www.biochar.ac.uk/what_is_biochar.php</a></li>	</ul>   </section><!--benefits ends --><!--organic feedstock--><section id="feedstock" class="organic-feedstock padding">   <div class="container">	   <div class="Organic-waste-content wow slideInLeft" data-wow-delay="300ms">	        <h3 class="mt-2 mb-4">Almost any organic feedstock can be reprocessed to Easychar. <span class="d-block mt-2">Among them are following:</span></h3>			<ul class="check-list mb-5">			   <li class="mb-2"><i class="fas fa-check mr-1"></i> Different grains leftovers after production whisky, beer or gi</li>			   <li class="mb-2"><i class="fas fa-check mr-1"></i> Pomace – waste after wines producti</li>			   <li class="mb-2"><i class="fas fa-check mr-1"></i> Apple or pear pulp as waste after cider product</li>			   <li class="mb-2"><i class="fas fa-check mr-1"></i> Leftovers of different fruits after purees or yogurts produc</li>			   <li class="mb-2"><i class="fas fa-check mr-1"></i> Banana’s bunch trunks, over aged bananas or banana trees as waste at bananas</li>			   <li class="mb-4"><i class="fas fa-check mr-1"></i> Leaves and grass as municipal</li>			</ul>	   </div>    </div>    <div class="fruits-list mt-5">	   <div class="container">			<ul class="d-flex mb-4 wow fadeInUp" data-wow-delay="300ms">				<li><img src="images/feedstock1.png" alt="apple-juice"></li>				<li><img src="images/feedstock2.png" alt="banana"></li>				<li><img src="images/feedstock3.png" alt="grapes-juice"></li>				<li><img src="images/feedstock4.png" alt="juice"></li>			</ul>  		</div>     </div> </section><!--organic feedstock ends --><!--database--><section id="database" class="database-licensed bglight padding">   <div class="container">	   <div class="database-content mt-2 mb-3">	        <div class="col-md-12 text-center wow fadeIn" data-wow-delay="300ms">				<h2 class="heading bottom30"><span class="font-bold">Database of licensed label users</span>					<span class="divider-center"></span>				</h2>			</div>            <h3 class="mb-3"><span class="font-bold">Please look have following fields to find license holder:</span></h3>             <form class="wow slideInLeft" data-wow-delay="300ms">                <div class="row">                    <div class="col-md-3">                        <div class="form-group">                            <input type="text" class="form-control" placeholder="License holder name" required="">					    </div> 				    </div>                     <div class="col-md-3">                        <div class="form-group">                            <input type="text" class="form-control" placeholder="Site / Farm name" required="">					    </div> 				    </div>                     <div class="col-md-3">                        <div class="form-group">                            <input type="text" class="form-control" placeholder="Product" required="">					    </div> 				    </div> 					                    <div class="col-md-3">                        <div class="form-group">                            <input type="text" class="form-control" placeholder="Country of production" required="">					    </div> 				    </div> 					                </div>            </form>            <table class="table-responsive text-center mt-4 wow fadeInUp">                <tr>				    <th>License holder name</th>				    <th>Site / Farm name</th>				    <th>Product</th>				    <th>Country of production</th>				    <th>License Copy(PDF)</th>				    <th>Amount of product licensed</th>				    <th>Units of measurements for the licensed amount (bottles, boxes, litres, etc.)</th>				    <th>License type</th>				    <th>Date license expires</th>				    <th>Date license activated</th>                </tr>                <tr>                    <td>Abiola International Corp</td>                    <td>Encantos del Mar Rojo S.A., registered at the address Av 7 y Calle 62A, Sabana Norte, San Jose, Costa Rica</td>                    <td>Banana Cavendish</td>                    <td>Costa Rica</td>                    <td></td>                    <td>10000</td>                    <td>boxes, 22XU a week</td>                    <td>General</td>					<td>31/12/2021</td>                    <td>to be confirmed</td>                </tr>                <tr>                    <td>Abiola International Corp</td>                    <td>Ricanza International S.A., registered at the address Av 7 y Calle 62A, Sabana Norte, San Jose Costa Rica</td>                    <td>Banana Cavendish</td>                    <td>Costa Rica</td>					<td></td>                    <td>10000</td>                    <td>boxes, 22XU a week</td>                    <td>General</td>					<td>31/12/2021</td>                    <td>to be confirmed</td>                </tr>                <tr>                    <td>Abiola International Corp</td>                    <td>EL JARDIN DEL TIGRE EJT S.A., registered at the address Barrio Jardin, 800 mts Norte, La Rita, Limon, Costa Rica</td>                    <td>Banana Cavendish</td>                    <td>Costa Rica</td>					<td></td>                    <td>10000</td>                    <td>boxes, 22XU a week</td>                    <td>General</td>					<td>31/12/2021</td>                    <td>to be confirmed</td>                </tr>                <tr>                    <td>Abiola International Corp</td>                    <td>All</td>                    <td>Banana Cavendish</td>                    <td>Guatemala</td>					<td></td>                    <td>N/A</td>                    <td>N/A</td>                    <td>General, exclusive</td>					<td>31/12/2021</td>                    <td>N/A</td>                </tr>                <tr>                    <td>Abiola International Corp</td>                    <td>TACUBA, SOCIEDAD ANONIMA, registered at the address 6ta calle 2 21 zona 9 edificio Heralso 4to nivel oficinas 401 402 y 404, Guatemala, Guatemala</td>                    <td>Banana Cavendish</td>                    <td>Guatemala</td>					<td></td>                    <td>10000</td>                    <td>boxes, 22XU a week</td>                    <td>General</td>					<td>31/12/2021</td>                    <td>to be confirmed</td>                </tr>	                <tr>                    <td>Abiola International Corp</td>                    <td>EL ALAMO, SOCIEDAD ANONIMA, registered at the address 6ta calle 2 21 zona 9 edificio Heralso 4to nivel oficinas 401 402 y 404, Guatemala, Guatemala</td>                    <td>Banana Cavendish</td>                    <td>Guatemala</td>					<td></td>                    <td>8000</td>                    <td>boxes, 22XU a week</td>                    <td>General</td>					<td>31/12/2021</td>                    <td>to be confirmed</td>                </tr>					            </table>	   </div>    </div> </section><!--database ends --><!--farming-effect --><section id="farming" class="farming padding">   <div class="container">	   <div class="farming-content text-center">			<h2>“CO2 responsible farming”</h2> 			<p>label – is a proof that a supplier takes efforts to reprocess organic waste to <span class="d-block">Easychar and therefore helps to save the planet</span></p>	   </div>		</div>	</section><section class="farming-logo text-center mt-5 mb-5">		<div class="container">		<div class="row">			<div class="col-md-6 wow fadeInRight" data-wow-delay="300ms">				<figure class="w-100"><img src="images/logo1.png" alt="BNI"></figure>			</div> 						<div class="col-md-6 wow fadeInLeft" data-wow-delay="300ms">				<figure class="w-100"><img src="images/logo2.png" alt="Proud Sponsor"></figure>			</div> 						</div>	    </div>	</section>	<!--farming ends --><!--contact us-->
+<section id="contact" class="position-relative padding_bottom_half">   <div class="container whitebox padding_bottom_half">      <div class="padding_top">         <div class="row">            <div class="col-md-12 text-center wow fadeInUp mt-n3" data-wow-delay="300ms">               <div class="heading-title bottom35">                  <h2 class="font-bold ">Get in touch</h2>               </div>            </div>            <div class="col-md-6 col-sm-12 order-md-2 text-center text-md-left">               <div class="contact-meta pl-0 pl-sm-5 wow fadeInRight" data-wow-delay="300ms">                  <div class="heading-title  font-bold">                     Address:                  </div>                  <div class="my-3">                     <p class="bottom10">Correspondence address: 20 Farraline Court, Inverness, UK, IV1 1PN.                     </p>                  </div>                  <div class="heading-title font-bold">                     Contact:                  </div>                  <div class="my-3">                     <p class="bottom10">                     <p class="bottom10">+44 7425 669 507                     </p>                     </p>                     <p class="bottom10"><a href="mailto:easychar@skyeast.co.uk">easychar@skyeast.co.uk</a></p>                  </div>               </div>            </div>            <div class="col-md-6 col-sm-12">               <div class="heading-title  wow fadeInLeft" data-wow-delay="300ms">                  <form class="getin_form" onsubmit="return false;">                     <div class="row px-2">                        <div class="col-md-12 col-sm-12" id="result1"></div>                        <div class="col-md-12 col-sm-12">                           <div class="form-group">                              <label for="name1" class="d-none"></label>                              <input class="form-control" id="name1" type="text" placeholder="Name" required="" name="userName">                           </div>                        </div>                        <div class="col-md-12 col-sm-12">                           <div class="form-group">                              <label for="email1" class="d-none"></label>                              <input class="form-control" type="email" id="email1" placeholder="Email" name="email">                           </div>                        </div>                        <div class="col-md-12 col-sm-12">                           <div class="form-group">                              <label for="phone1" class="d-none"></label>                              <input class="form-control" type="phone" id="phone1" placeholder="Phone"                                 name="phone">                           </div>                        </div>                        <div class="col-md-12 col-sm-12">                           <div class="form-group">                              <label for="message1" class="d-none"></label>                              <textarea class="form-control" id="message1" placeholder="Message" required="" name="message"></textarea>                           </div>                        </div>                        <div class="col-md-12 col-sm-12">                           <button type="submit" id="submit_btn1" class="button gradient-btn w-100">Send</button>                        </div>                     </div>                  </form>               </div>            </div>         </div>      </div>   </div></section>
+<!--contact us end-->
+<!--Footer ends-->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!--Bootstrap Core-->
+<script src="js/propper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--to view items on reach-->
+<script src="js/jquery.appear.js"></script>
+<!--Owl Slider-->
+<script src="js/owl.carousel.min.js"></script>
+<!--number counters-->
+<script src="js/jquery-countTo.js"></script>
+<!--Parallax Background-->
+<script src="js/parallaxie.js"></script>
+<!--Cubefolio Gallery-->
+<script src="js/jquery.cubeportfolio.min.js"></script>
+<!--Fancybox js-->
+<script src="js/jquery.fancybox.min.js"></script>
+<!--Tooltip js-->
+<script src="js/tooltipster.min.js"></script>
+<!--wow js-->
+<script src="js/wow.js"></script>
+<!--Revolution SLider-->
+<script src="js/revolution/jquery.themepunch.tools.min.js"></script>
+<script src="js/revolution/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+<script src="js/revolution/extensions/revolution.extension.actions.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.migration.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.video.min.js"></script>
+<!--map js-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw"></script>
+<script src="js/map.js"></script>
+<!--custom functions and script-->
+<script src="js/functions.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+	all_data();
+    $( ".holder_name,.farm_name,.product,.country_of_production" ).keyup(function(){
+        var holder_name=$('.holder_name').val();
+        var farm_name=$('.farm_name').val();
+        var product=$('.product').val();
+        var country_of_production=$('.country_of_production').val();
+        $.ajax({
+		type: "POST",
+		url: "table_datails.php",
+		data:{holder_name:holder_name,farm_name:farm_name,product:product,country_of_production:country_of_production},
+		success: function(data){
+			$(".all_data").html(data);
+		}
+    });
+	});
+    
+    function all_data(){
+        $.ajax({
+		type: "GET",
+		url: "table_datails.php",
+		dataType:"html",
+		success: function(data){
+		//alert(data);
+			$(".all_data").html(data);
+			}
+		});
+	}
+	
+</script>
+
+
+
+</body>
+</html>

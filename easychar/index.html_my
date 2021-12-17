@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Holding company running different projects">
+<meta name="keywords" content="Sky East UK Ltd was incorporated in December 2013 in London. The company focused on projects connected to healthy life style and environment.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>EasyChar | Organic soil enhancer by affordable price</title>
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/tooltipster.min.css">
+<link rel="stylesheet" href="css/cubeportfolio.min.css">
+<link rel="stylesheet" href="css/revolution/navigation.css">
+<link rel="stylesheet" href="css/revolution/settings.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://www.google.com/recaptcha/api.js?render=6LdIH-IUAAAAABdUSl1EVBQ_HCSotDaXdtT-Bf9e"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="75" class="offset-nav">
+<!--PreLoader-->
+<div class="loader">
+    <div class="loader-inner">
+        <div class="cssload-loader"></div>
+    </div>
+</div>
+<!--PreLoader Ends-->
+<!-- header -->
+<header class="site-header" id="header">
+    <nav class="navbar navbar-expand-lg transparent-bg static-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" class="logo-default">
+                <img src="images/logo.png" alt="logo" class="logo-scrolled">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto ml-xl-0 mr-xl-0">
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll scrollupto" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#production">Production</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#application">Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#waste-recycling-service">Waste recycling service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#co2-responsible-farming">CO2 responsible farming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#contact">Contacts</a>
+                    </li>
+                <!--    <li class="nav-item nav-item-waste">
+                        <a class="nav-link pagescroll" href="#waste-recycling-service">Waste recycling service</a>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+        <!--side menu open button-->
+        <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
+            <span></span> <span></span> <span></span>
+        </a>
+    </nav>
+    <!-- side menu -->
+    <div class="side-menu opacity-0 gradient-bg">
+        <div class="overlay"></div>
+        <div class="inner-wrapper">
+            <span class="btn-close btn-close-no-padding" id="btn_sideNavClose"><i></i><i></i></span>
+            <nav class="side-nav w-100">
+                <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link pagescroll scrollupto" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#production">Production</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#application">Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#waste-recycling-service">Waste recycling service</a>
+                    </li>                    <li class="nav-item">                        <a class="nav-link" href="scotland.html">Organic waste recycling Scotland</a>                    </li>                    <li class="nav-item">                        <a class="nav-link" href="europe.html">Organic waste recycling Europe</a>                    </li>                    <li class="nav-item">                        <a class="nav-link" href="distilleries.html">Distilleries waste recycling</a>                    </li>							
+                    <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#co2-responsible-farming">CO2 responsible farming</a>
+                    </li>                    <li class="nav-item">                        <a class="nav-link" href="eco-friendly.html">Eco-friendly waste reprocessing</a>                    </li>					                    <li class="nav-item">                        <a class="nav-link" href="environment-friendly.html">Environmentally friendly waste reprocessing</a>                    </li>					                    <li class="nav-item">                        <a class="nav-link pagescroll" href="#contact">Contacts</a>                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="close_side_menu" class="tooltip"></div>
+    <!-- End side menu -->
+</header>
+<!-- header -->
+<!--Main Slider-->
+<section id="home" class="p-0 single-slide light-slider">
+    <h2 class="d-none">hidden</h2>
+    <div id="rev_single_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="trax_slider_01">
+        <!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
+        <div id="rev_single" class="rev_slider fullwidthabanner" data-version="5.4.8.1">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-index="rs-3" data-transition="crossfade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="images/banner_hdr.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/banner_hdr.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="on" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+                    <div class="tp-caption   tp-resizeme"
+                    data-x="['right','right','right','center']" data-hoffset="['-120','-100','-50','0']"
+                    data-y="['center','center','center','bottom']" data-voffset="['0','0','0','-50']"
+                    data-type="image"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay": 500, "speed": 300, "from": "opacity: 0", "to": "opacity: 1"},
+                   {"delay": "wait", "speed": 300, "to": "opacity: 0"}]'
+                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                    data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    style="z-index: 6;"><img src="images/hdr_rht_img.png" alt="" data-ww="['900px','650px','550px','400px']" data-hh="['900px','650px','550px','400px']" data-no-retina> </div>
+                </li>
+            </ul>
+        </div>
+        <!-- END REVOLUTION SLIDER -->
+    </div>
+    <!--scroll down-->
+</section>
+<!--Main Slider ends -->
+<!--Some Feature --><section class="content padding mt-2 mb-2">    <div class="container">      <div class="row d-flex align-items-top" id="app-feature">         <div class="col-lg-6 col-md-6 col-sm-12 borrht">            <div class="text-center text-md-left">               <div class="feature-item mt-3 wow fadeInLeft" data-wow-delay="300ms">                  <div class="text">                     <h3 class="bottom15">                        <span class="d-inline-block font-medium">Our Mission</span>                     </h3>                     <p>is to make practical application of environmentally beneficial technologies economically viable and affordable for mass usage.</p>                  </div>               </div>            </div>         </div>         <div class="col-lg-6 col-md-6 col-sm-12">            <div class="text-center text-md-left">               <div class="feature-item mt-3 wow fadeInRight" data-wow-delay="300ms">                  <div class="text">                     <h3 class="bottom15">                        <span class="d-inline-block  font-medium">Our goal</span>                     </h3>                     <p>is to involve the maximum number of farms and businesses to convert their organic waste to Easychar.</p>                  </div>               </div>            </div>         </div>      </div>			  <figure class="w-100 mt-4"><img class="w-100" src="images/goal.jpg" alt="goal"></figure>    </div></section><!--About -->
+<section id="about" class="single-feature padding">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <h2 class="darkcolor font-bold bottom30 w-100 text-center">What is so special about <span class="defaultcolor">EasyChar</span>? </h2>
+            <div class="col-lg-5 offset-lg-1 borrht col-md-6 col-sm-12 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
+                <div class="what_cont">
+                <h3 class="bottom35">
+                    <span class="d-inline-block font-bold"><a href="https://skyeast.co.uk/" target="_blank"> Sky East UK </a> has a production technology of unique product that called Pure Element. </span>
+                </h3>
+                <p>Easychar is a key ingredient for all products supplied under our trademark.</p>				<p>Easychar belongs to biochar family.</p>
+                <a href="http://randd.defra.gov.uk/Default.aspx?Menu=Menu&Modul" target="_blank" class=" readmlnk  mb-sm-0 mb-4"><i class="fa fa-long-arrow-alt-right fa-lg"></i> Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-5  col-md-6 col-sm-12 text-sm-left text-center wow fadeInRight" data-wow-delay="300ms">
+                <div class="what_cont">
+					<div class="heading-title mb-4"></div>
+					<h3 class="bottom35">
+						<span class="d-inline-block font-bold">This technology significantly reduces costs of Pure Element production.</span>					</h3>
+					<p class="bottom35">Our company has exclusive rights to produce and distribute the product and looking for long term cooperation with customers.</p>
+					<a href="https://www.biochar.ac.uk/what_is_biochar.php" target="_blank" class=" readmlnk  mb-sm-0 mb-4"><i class="fa fa-long-arrow-alt-right fa-lg"></i> Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--About ends -->
+<!--Some Feature ends-->
+<!-- WOrk Process-->
+<section id="our-process" class="padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center wow fadeInRight" data-wow-delay="300ms">
+			    <div class="image"> 
+				   <img alt="SEO" src="images/Top line Photos 6.jpg">
+				</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--WOrk Process ends-->
+<!-- Mobile Apps -->
+<section id="production" class="padding">
+   <div class="container">
+   <div class="row align-items-center"> 
+   <div class="col-lg-12 col-md-12 col-sm-12">
+   <div class="heading-title bottom30 wow fadeInUp" data-wow-delay="300ms">
+   <h2 class="darkcolor font-bold text-center text-md-center">Why our production costs are lower than for other biochar-like products?               </h2>            </div>  
+   </div>      </div>  
+   <div class="row d-flex align-items-top" id="app-feature"> 
+   <div class="col-lg-4 col-md-4 col-sm-12 borrht">   
+   <div class="text-center text-md-left">   
+   <div class="feature-item mt-3 wow fadeInLeft" data-wow-delay="300ms"> 
+   <div class="text">     
+   <h3 class="bottom15">     
+   <span class="d-inline-block font-medium">Waste</span>
+   </h3>                   
+   <p>Our product is produced from waste of different food production businesses. </p>  
+   <p> These raw materials are easy available and in majority of cases does not cost much. </p> 
+   </div>   
+   </div>   
+   </div>     
+   </div>     
+   <div class="col-lg-4 col-md-4 col-sm-12 borrht"> 
+   <div class="text-center text-md-left">      
+   <div class="feature-item mt-3 wow fadeInUp" data-wow-delay="300ms"> 
+   <div class="text">       
+   <h3 class="bottom15">       
+   <span class="d-inline-block  font-medium">Equipment</span> 
+   </h3>              
+   <p>We use specially designed equipment, which allows us to minimise necessary costs in many ways.                     </p>    
+   </div>     
+   </div>    
+   </div>     
+   </div>     
+   <div class="col-lg-4 col-md-4 col-sm-12"> 
+   <div class="text-center text-md-left"> 
+   <div class="feature-item mt-3 wow fadeInRight" data-wow-delay="300ms">  
+   <div class="text">                     <h3  class="bottom15">     
+   <span class="d-inline-block  font-medium">Technology </span> 
+   </h3>                 
+   <p>These two factors allowed us to develop unique technology and arrange supply chain in an optimal way tofurther minimise logistics costs                     </p> 
+   </div>            
+   </div>        
+   </div>         </div>
+   </div>	
+   <figure class="w-100 mt-5"><img class="w-100" src="images/production.jpg" alt="production"></figure>   </div>
+   </section>
+<!--Mobile Apps ends--><!-- Application -->
+<section id="application" class="padding bglight"> 
+  <div class="container">	
+  <div class="col-md-12 text-center heading_space wow fadeIn" data-wow-delay="300ms">
+  <h2 class="heading bottom30 "><span class="font-bold">Possible areas of Application</span>			 <span class="divider-center"></span>		  </h2>		  <div id="services-measonry2" class="cbp">		
+  <div class="cbp-item digital brand design borrht">				<div class="services-main">				   <div class="services-content brand text-center text-md-left">					
+  <h3 class="bottom10 darkcolor font-bold"><a href="javascript:clickevent(1);">Agricultural purposes.</a></h3>					  <h3 class="bottom10 darkcolor"><a href="javascript:clickevent(1);">Click</a></h3>					  <p class="bottom15 enbtext" id="clk1">Mixed with soil or any other fertile medium reduces required quantity of fertilisers and extends soil’s fertility. <br/><br/>						 We observed cases when the same growing medium stayed fertile over 2-3 years without additional fertilisation. <br/><br/>						 We are happy to cooperate and test the material for applications at vertical farming and other smart agro-technologies.					  </p>
+  </div>				   <div class="image bottom10">					  <div class="image"><img alt="Agricultural" src="images/abtimg3.jpg"></div>				   </div>				</div>			 </div>	
+  <div class="cbp-item digital graphics ">				<div class="services-main">				   <div class="services-content text-center text-md-left">					  <h3 class="bottom10 darkcolor  font-bold"><a href="javascript:clickevent(2);">Home gardening.</a></h3>					  <h3 class="bottom10 darkcolor"><a href="javascript:clickevent(2);">Click</a></h3>
+  <p class="bottom15 enbtext" id="clk2"> Mixed with compost EasyChar brings a long list of benefits for the end users. Composts work longer and better labo
